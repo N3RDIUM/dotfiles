@@ -5,11 +5,9 @@
 { inputs, config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      inputs.home-manager.nixosModules.home-manager
-    ];
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.grub.enable = true;
@@ -87,13 +85,6 @@
     description = "n3rdium";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
-  };
-
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      n3rdium = import ./home.nix;
-    };
   };
 
   # Install firefox.
