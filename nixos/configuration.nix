@@ -44,8 +44,8 @@
     LC_TIME = "en_IN";
   };
 
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
+  # Enable Wayland!
+  services.wayland.enable = true;
 
   # (DONT) Enable the GNOME Desktop Environment.
   # services.xserver.displayManager.gdm.enable = true;
