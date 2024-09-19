@@ -35,6 +35,9 @@
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.eno1.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp0s20f0u9u1.useDHCP = lib.mkDefault true;
+  
+  # WHY NVIDIA WHYYYYY
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_470;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
