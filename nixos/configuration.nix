@@ -99,6 +99,7 @@
      neovim
      wget
      curl
+     kitty
   ];
   environment.variables.EDITOR = "nvim";
 
