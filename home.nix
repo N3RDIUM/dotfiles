@@ -30,6 +30,7 @@
     dunst
     nordic
     wlsunset
+    fira-code
 
     # Miscellaneous
     lxappearance
@@ -48,6 +49,8 @@
 
   home.file = {
     ".config/hypr/hyprland.conf".source = ./hypr/hyprland.conf;
+    ".config/kitty/kitty.conf".source = ./kitty/kitty.conf;
+    ".config/kitty/current-theme.conf".source = ./kitty/current-theme.conf;
   };
 
   home.sessionVariables = {
