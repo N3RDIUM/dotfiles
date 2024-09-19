@@ -99,6 +99,9 @@
      wget
      curl
      kitty
+     cmake
+     meson
+     cpio
   ];
   environment.variables.EDITOR = "nvim";
 
