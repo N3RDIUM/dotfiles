@@ -27,7 +27,7 @@
 	  {
             home-manager.useGlobalPkgs = true;
 	    home-manager.useUserPackages = true;
-	    home-manager.users.n3rdium = import ./home.nix ;
+	    home-manager.users.n3rdium = import ./home.nix;
             home-manager.extraSpecialArgs = { inherit system; };
 	  }
 	];

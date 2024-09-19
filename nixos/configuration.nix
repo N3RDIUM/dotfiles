@@ -44,15 +44,10 @@
     LC_TIME = "en_IN";
   };
 
-  # Enable Wayland!
-
-  # (DONT) Enable the GNOME Desktop Environment.
-  # services.xserver.displayManager.gdm.enable = true;
-  # services.xserver.desktopManager.gnome.enable = true;
-
-  # Enable SDDM instead
-  services.sddm.displayManager.wayland.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
+  # Enable SDDM and Hyprland
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
+  programs.hyprland.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
