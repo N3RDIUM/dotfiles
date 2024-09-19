@@ -48,22 +48,6 @@
   services.displayManager.sddm.wayland.enable = true;
   programs.hyprland.enable = true;
   
-  # Nvidia stuff
-  hardware.opengl = {
-    enable = true;
-  };
-
-  services.xserver.videoDrivers = ["nvidia"];
-
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = false;
-    powerManagement.finegrained = false;
-    open = false;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
-  };
-
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
