@@ -25,6 +25,7 @@
     fluent-reader
 
     # Rice Stuff
+    cava
     wofi
     swww
     dunst
@@ -59,6 +60,8 @@
     ".config/fastfetch/config.jsonc".source = ./fastfetch/config.jsonc;
 
     ".config/nvim/".source = ./nvim;
+
+    "wallpapers/".source = ./wallpapers;
   };
 
   home.sessionVariables = {
