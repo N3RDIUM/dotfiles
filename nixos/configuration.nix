@@ -48,6 +48,7 @@
   services.displayManager.sddm.wayland.enable = true;
   programs.hyprland.enable = true;
 
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -102,6 +103,7 @@
      cmake
      meson
      cpio
+     hyprlandPlugins.hy3
   ];
   environment.variables.EDITOR = "nvim";
 
