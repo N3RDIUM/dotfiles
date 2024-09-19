@@ -60,13 +60,6 @@
     EDITOR = "nvim";
   };
 
-  wayland.windowManager.hyprland = {
-    enable = true;
-    package = pkgs.hyprland;
-    xwayland.enable = true;
-    systemd.enable = true;
-  };
-  
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
