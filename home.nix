@@ -70,19 +70,21 @@
 
   home.file = {
     ".config/hypr/hyprland.conf".source = ./hypr/hyprland.conf;
-
     ".config/kitty/kitty.conf".source = ./kitty/kitty.conf;
     ".config/kitty/current-theme.conf".source = ./kitty/current-theme.conf;
-
     ".config/fastfetch/config.jsonc".source = ./fastfetch/config.jsonc;
-
     ".config/nvim/".source = ./nvim;
-
     "wallpapers/".source = ./wallpapers;
   };
 
   home.sessionVariables = {
     EDITOR = "nvim";
+  };
+
+  programs.git = {
+    enable = true;
+    userName  = "n3rdium";
+    userEmail = "n3rdium@gmail.com";
   };
 
   programs.home-manager.enable = true;

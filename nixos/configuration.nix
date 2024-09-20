@@ -16,18 +16,8 @@
     loader.efi.canTouchEfiVariables = true;
 
     ### Boot animation
-    plymouth = {
-      enable = true;
-      theme = "motion";
-      themePackages = with pkgs; [
-        # By default we would install all themes
-        (adi1090x-plymouth-themes.override {
-          selected_themes = [ "motion" ];
-        })
-      ];
-    };
-
-    consoleLogLevel = 0;
+    plymouth.enable = true;
+    consoleLogLevel = 4;
     initrd.verbose = false;
     kernelParams = [
       "quiet"
@@ -127,5 +117,16 @@
     where-is-my-sddm-theme
   ];
   environment.variables.EDITOR = "nvim";
-  system.stateVersion = "24.11"; # Did you read the comment?
+
+  # Mount some stuff
+  fileSystems."/mnt/Code" = {
+    device = "/dev/disk/by-uuid/b95320b3-3df1-4904-a55e-da1e8d819231";
+    options = ["nofail"];
+  };
+  fileSystems."/mnt/Space" = {
+    device = "/dev/disk/by-uuid/0A956B927E2FFFE8";
+    options = ["nofail"];
+  };
+
+  system.stateVersion = "24.11";
 }
