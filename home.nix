@@ -29,7 +29,6 @@
     wofi
     swww
     dunst
-    nordic
     cmatrix
     wlsunset
     hollywood
@@ -41,14 +40,32 @@
     ollama
     discord
     ani-cli
+
+    # Deps
+    cmake
+    meson
+    cpio
   ];
 
   gtk = {
     enable = true;
+
     theme = {
       name = "Nordic";
-      package = pkgs.materia-theme;
+      package = pkgs.nordic;
     };
+
+    iconTheme = {
+      name = "Awaita";
+      package = pkgs.adwaita-icon-theme;
+    };
+  };
+
+  qt = {
+    enable = true;
+    platformTheme.name = "gtk";
+    style.name = "Nordic";
+    style.package = pkgs.nordic;
   };
 
   home.file = {

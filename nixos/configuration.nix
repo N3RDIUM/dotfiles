@@ -6,8 +6,38 @@
   ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot = {
+    loader.systemd-boot.enable = true;
+    loader.efi.canTouchEfiVariables = true;
+
+    plymouth = {
+      enable = true;
+      theme = "motion";
+      themePackages = with pkgs; [
+        (adi1090x-plymouth-themes.override {
+          selected_themes = [ "motion" ];
+        })
+      ];
+    };
+
+    consoleLogLevel = 0;
+    initrd.verbose = false;
+    kernelParams = [
+      "quiet"
+      "splash"
+      "boot.shell_on_fail"
+      "loglevel=3"
+      "rd.systemd.show_status=false"
+      "rd.udev.log_level=3"
+      "udev.log_priority=3"
+    ];
+
+    loader.timeout = 0;
+  };
+
+  # Boot faster!
+  systemd.services.systemd-udev-settle.enable = false;
+  systemd.services.NetworkManager-wait-online.enable = false;
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -76,16 +106,16 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     pkgs.home-manager
-     git
-     neovim
-     wget
-     curl
-     kitty
-     cmake
-     meson
-     cpio
-     hyprlandPlugins.hy3
+    pkgs.home-manager
+    git
+    neovim
+    wget
+    curl
+    kitty
+    cmake
+    meson
+    cpio
+    hyprlandPlugins.hy3
   ];
   environment.variables.EDITOR = "nvim";
   system.stateVersion = "24.11"; # Did you read the comment?
