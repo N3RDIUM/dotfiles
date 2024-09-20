@@ -13,6 +13,7 @@
       efiSupport = true;
       timeoutStyle = "menu";
     };
+    loader.efi.canTouchEfiVariables = true;
 
     ### Boot animation
     plymouth = {
