@@ -31,6 +31,7 @@
     dunst
     cmatrix
     wlsunset
+    hyprshot
     hollywood
     fastfetch
     fira-code

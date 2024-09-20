@@ -59,14 +59,16 @@
     LC_TIME = "en_IN";
   };
 
-  # Enable SDDM and Hyprland
+  # Enable SDDM, Hyprland and KDE Plasma
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
-    theme = "where_is_my_sddm_theme";
+    # theme = "where_is_my_sddm_theme";
   };
   programs.hyprland.enable = true;
-  
+  services.xserver.enable = false; # DONT ENABLE DIS PLEEZE
+  services.desktopManager.plasma6.enable = true;
+    
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -87,11 +89,21 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.n3rdium = {
-    isNormalUser = true;
-    description = "n3rdium";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+  users.users = {
+    n3rdium = {
+      isNormalUser = true;
+      description = "n3rdium";
+      extraGroups = [ "networkmanager" "wheel" ];
+      packages = with pkgs; [];
+    };
+
+
+    not-n3rdium = {
+      isNormalUser = true;
+      description = "not-n3rdium";
+      extraGroups = [ "networkmanager" ];
+      packages = with pkgs; [];
+    };
   };
 
   # Install firefox.
@@ -121,10 +133,6 @@
   # Mount some stuff
   fileSystems."/mnt/Code" = {
     device = "/dev/disk/by-uuid/b95320b3-3df1-4904-a55e-da1e8d819231";
-    options = ["nofail"];
-  };
-  fileSystems."/mnt/Space" = {
-    device = "/dev/disk/by-uuid/0A956B927E2FFFE8";
     options = ["nofail"];
   };
 
