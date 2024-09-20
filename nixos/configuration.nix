@@ -7,13 +7,19 @@
 
   # Bootloader.
   boot = {
-    loader.systemd-boot.enable = true;
-    loader.efi.canTouchEfiVariables = true;
+    loader.grub = {
+      enable = true;
+      device = "nodev";
+      efiSupport = true;
+      timeoutStyle = "menu";
+    };
 
+    ### Boot animation
     plymouth = {
       enable = true;
       theme = "motion";
       themePackages = with pkgs; [
+        # By default we would install all themes
         (adi1090x-plymouth-themes.override {
           selected_themes = [ "motion" ];
         })
@@ -31,8 +37,6 @@
       "rd.udev.log_level=3"
       "udev.log_priority=3"
     ];
-
-    loader.timeout = 0;
   };
 
   # Boot faster!
@@ -65,8 +69,11 @@
   };
 
   # Enable SDDM and Hyprland
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
+    theme = "where_is_my_sddm_theme";
+  };
   programs.hyprland.enable = true;
   
   # Configure keymap in X11
@@ -116,6 +123,7 @@
     meson
     cpio
     hyprlandPlugins.hy3
+    where-is-my-sddm-theme
   ];
   environment.variables.EDITOR = "nvim";
   system.stateVersion = "24.11"; # Did you read the comment?
