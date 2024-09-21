@@ -68,7 +68,11 @@
   programs.hyprland.enable = true;
   services.xserver.enable = false; # DONT ENABLE DIS PLEEZE
   services.desktopManager.plasma6.enable = true;
-    
+
+  # Switch to ZSH
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";

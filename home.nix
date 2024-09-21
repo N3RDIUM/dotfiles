@@ -38,6 +38,12 @@
     fira-code
     playerctl
 
+    # Shell Stuff
+    zoxide
+    atuin
+    pure-prompt
+    zsh-autosuggestions
+
     # Miscellaneous
     lxappearance
     ollama
@@ -49,6 +55,38 @@
     meson
     cpio
   ];
+
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+
+    shellAliases = {
+      ll = "ls -l";
+      update = "sudo nixos-rebuild switch";
+    };
+
+    history = {
+      size = 65536;
+      path = "${config.xdg.dataHome}/zsh/history";
+    };
+
+    oh-my-zsh = {
+        enable = true;
+        plugins = [ "git" ];
+        theme = "pure";
+    };
+  };
+
+  programs.git = {
+    enable = true;
+    userName = "n3rdium";
+    userEmail = "n3rdium@gmail.com";
+    extraConfig = {
+      credential.helper = "oauth";
+    };
+  };
 
   gtk = {
     enable = true;
@@ -78,17 +116,12 @@
     ".config/fastfetch/config.jsonc".source = ./fastfetch/config.jsonc;
     ".config/nvim/".source = ./nvim;
     ".config/zed/".source = ./zed;
+    ".zshrc".source = ./.zshrc;
     "wallpapers/".source = ./wallpapers;
   };
 
   home.sessionVariables = {
     EDITOR = "nvim";
-  };
-
-  programs.git = {
-    enable = true;
-    userName  = "n3rdium";
-    userEmail = "n3rdium@gmail.com";
   };
 
   programs.home-manager.enable = true;
