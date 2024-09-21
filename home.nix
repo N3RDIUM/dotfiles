@@ -16,6 +16,7 @@
 
     # Code
     vscode
+    zed-editor
 
     # Music
     lmms
@@ -35,6 +36,7 @@
     hollywood
     fastfetch
     fira-code
+    playerctl
 
     # Miscellaneous
     lxappearance
@@ -75,6 +77,7 @@
     ".config/kitty/current-theme.conf".source = ./kitty/current-theme.conf;
     ".config/fastfetch/config.jsonc".source = ./fastfetch/config.jsonc;
     ".config/nvim/".source = ./nvim;
+    ".config/zed/".source = ./zed;
     "wallpapers/".source = ./wallpapers;
   };
 

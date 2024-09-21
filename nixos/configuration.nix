@@ -126,6 +126,8 @@
     meson
     cpio
     hyprlandPlugins.hy3
+    xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
     where-is-my-sddm-theme
   ];
   environment.variables.EDITOR = "nvim";
