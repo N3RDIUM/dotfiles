@@ -43,6 +43,7 @@
     atuin
     pure-prompt
     zsh-autosuggestions
+    git-credential-oauth
 
     # Miscellaneous
     lxappearance
