@@ -15,15 +15,19 @@
     stellarium
 
     # Code
+    nixd
+    nixfmt-classic
     vscode
     zed-editor
 
     # Music
     lmms
+    audacity
+    pavucontrol
 
     # Prod
+    blender
     obsidian
-    fluent-reader
 
     # Rice Stuff
     cava
@@ -74,9 +78,9 @@
     };
 
     oh-my-zsh = {
-        enable = true;
-        plugins = [ "git" ];
-        theme = "pure";
+      enable = true;
+      plugins = [ "git" ];
+      theme = "pure";
     };
   };
 
@@ -84,9 +88,7 @@
     enable = true;
     userName = "n3rdium";
     userEmail = "n3rdium@gmail.com";
-    extraConfig = {
-      credential.helper = "oauth";
-    };
+    extraConfig = { credential.helper = "oauth"; };
   };
 
   gtk = {
@@ -116,14 +118,11 @@
     ".config/kitty/current-theme.conf".source = ./kitty/current-theme.conf;
     ".config/fastfetch/config.jsonc".source = ./fastfetch/config.jsonc;
     ".config/nvim/".source = ./nvim;
-    ".config/zed/".source = ./zed;
     ".zshrc".source = ./.zshrc;
     "wallpapers/".source = ./wallpapers;
   };
 
-  home.sessionVariables = {
-    EDITOR = "nvim";
-  };
+  home.sessionVariables = { EDITOR = "zed --wait"; };
 
   programs.home-manager.enable = true;
 }

@@ -10,5 +10,11 @@
     "mode": "system",
     "light": "Nord",
     "dark": "One Dark"
+  },
+  "assistant": {
+    "version": "1",
+    "provider": {
+      "name": "ollama"
+    }
   }
 }

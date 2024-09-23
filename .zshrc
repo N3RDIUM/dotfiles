@@ -124,3 +124,6 @@ bindkey -M emacs '^[OA' atuin-up-search
 bindkey -M vicmd '^[OA' atuin-up-search-vicmd
 bindkey -M viins '^[OA' atuin-up-search-viins
 bindkey -M vicmd 'k' atuin-up-search-vicmd
+
+# Why not?
+fastfetch

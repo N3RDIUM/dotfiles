@@ -1,9 +1,7 @@
 { inputs, config, pkgs, ... }:
 
 {
-  imports = [
-    ./hardware-configuration.nix
-  ];
+  imports = [ ./hardware-configuration.nix ];
 
   # Bootloader.
   boot = {
@@ -98,15 +96,14 @@
       isNormalUser = true;
       description = "n3rdium";
       extraGroups = [ "networkmanager" "wheel" ];
-      packages = with pkgs; [];
+      packages = with pkgs; [ ];
     };
-
 
     not-n3rdium = {
       isNormalUser = true;
       description = "not-n3rdium";
       extraGroups = [ "networkmanager" ];
-      packages = with pkgs; [];
+      packages = with pkgs; [ ];
     };
   };
 
@@ -121,6 +118,8 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     pkgs.home-manager
+    mpv
+    vlc
     git
     neovim
     wget
@@ -136,10 +135,19 @@
   ];
   environment.variables.EDITOR = "nvim";
 
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [ ];
+
   # Mount some stuff
+  boot.supportedFilesystems = [ "ntfs" ];
   fileSystems."/mnt/Code" = {
     device = "/dev/disk/by-uuid/b95320b3-3df1-4904-a55e-da1e8d819231";
-    options = ["nofail"];
+    options = [ "nofail" ];
+  };
+  fileSystems."/mnt/Space" = {
+    device = "/dev/disk/by-uuid/0A956B927E2FFFE8";
+    fsType = "ntfs-3g";
+    options = [ "rw" "uid=1000" "nofail" ];
   };
 
   system.stateVersion = "24.11";

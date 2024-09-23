@@ -9,26 +9,8 @@
         "format": "\u001b[90m┌─────────────────────────────────────────────────────────────┐"
     },
     {
-        "type": "title",
-        "keyWidth": 10
-    },
-    {
-        "type": "custom",
-        "format": "\u001b[90m└─────────────────────────────────────────────────────────────┘"
-    },
-
-    {
-        "type": "custom",
-        "format": "\u001b[90m┌─────────────────────────────────────────────────────────────┐"
-    },
-    "cpu",
-    "gpu",
-    "memory",
-    "display",
-    "host",
-    {
-        "key": "| Chassis",
-        "type": "chassis"
+        "key": "  ",
+        "type": "title"
     },
     {
         "type": "custom",
@@ -40,23 +22,52 @@
         "format": "\u001b[90m┌─────────────────────────────────────────────────────────────┐"
     },
     {
-        "key": "| Distro",
+        "key": "  CPU",
+        "type": "cpu"
+    },
+    {
+        "key": "  GPU",
+        "type": "gpu"
+    },
+    {
+        "key": "  Memory",
+        "type": "memory"
+    },
+    {
+        "key": "  Display",
+        "type": "display"
+    },
+    {
+        "key": "  Host",
+        "type": "host"
+    },
+    {
+        "type": "custom",
+        "format": "\u001b[90m└─────────────────────────────────────────────────────────────┘"
+    },
+
+    {
+        "type": "custom",
+        "format": "\u001b[90m┌─────────────────────────────────────────────────────────────┐"
+    },
+    {
+        "key": "  Distro",
         "type": "os"
     },
     {
-        "key": "| Kernel",
+        "key": "  Kernel",
         "type": "kernel"
     },
     {
-        "key": "| Uptime",
+        "key": "  Uptime",
         "type": "uptime"
     },
     {
-        "key": "| Packages",
+        "key": "  Packages",
         "type": "packages"
     },
     {
-        "key": "| Local IP",
+        "key": "  Local IP",
         "type": "localip"
     },
     {
@@ -68,10 +79,15 @@
         "type": "custom",
         "format": "\u001b[90m┌─────────────────────────────────────────────────────────────┐"
     },
-    "shell",
-    "de",
-    "terminal",
-    "player",
+
+    {
+        "key": "  Shell",
+        "type": "shell"
+    },
+    {
+        "key": "  Terminal",
+        "type": "terminal"
+    },
     {
         "type": "custom",
         "format": "\u001b[90m└─────────────────────────────────────────────────────────────┘"
