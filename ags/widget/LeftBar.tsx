@@ -14,11 +14,24 @@ export default function LeftBar() {
       application={App}
     >
       <centerbox vertical hexpand>
-        <box />
-        <centerbox className="Separator" />
-        <box />
-        <centerbox hexpand className="Break" />
-        <box />
+        <box vertical>
+          <box className="Container"></box>
+          <box className="Separator" />
+          <box className="Container"></box>
+        </box>
+
+        <box vertical>
+          <box className="Container"></box>
+          <box className="Separator" />
+          <box className="Container"></box>
+        </box>
+
+        <box vertical>
+          <box vexpand />
+          <box className="Container"></box>
+          <box className="Separator" />
+          <box className="Container"></box>
+        </box>
       </centerbox>
     </window>
   );

@@ -1,4 +1,6 @@
 import { App, Variable, Astal, Gtk } from "astal";
+import Time from "./Time";
+import Tray from "./Tray";
 
 export default function RightBar() {
   return (
@@ -14,11 +16,22 @@ export default function RightBar() {
       application={App}
     >
       <centerbox vertical hexpand>
-        <box />
-        <centerbox className="Separator" />
-        <box />
-        <centerbox hexpand className="Break" />
-        <box />
+        <box vertical>
+          <box className="Container"></box>
+          <box className="Separator" />
+          <box className="Container">
+            <Time />
+          </box>
+        </box>
+
+        <box vertical></box>
+
+        <box vertical>
+          <box vexpand />
+          <box className="Container"></box>
+          <box className="Separator" />
+          <box className="Container"></box>
+        </box>
       </centerbox>
     </window>
   );

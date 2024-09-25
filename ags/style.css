@@ -1,7 +1,5 @@
 window.Bar {
     background: transparent;
-    color: @theme_fg_color;
-    font-weight: bold;
 }
 
 window.Bar centerbox {
@@ -9,7 +7,7 @@ window.Bar centerbox {
     margin: 8px;
 }
 
-window.Bar box {
+.Container {
     background: @theme_bg_color;
     border-radius: 4px;
     min-width: 42px;
@@ -24,6 +22,27 @@ window.Right centerbox {
     margin-left: 0;
 }
 
-window.Separator {
-    min-height: 4px;
+.Separator {
+    background: transparent;
+    min-width: 42px;
+    min-height: 8px;
+}
+
+.TimeLabel {
+    color: #eceff4;
+    font-family: "Fira Code";
+    font-size: 24px;
+    margin-left: 6px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+.DateLabel {
+    color: #d8dee9;
+    font-family: "Fira Code";
+    font-size: 12px;
+    margin-left: 6px;
+}
+.DateTime {
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
