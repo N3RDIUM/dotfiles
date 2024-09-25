@@ -8,8 +8,8 @@
   },
   "theme": {
     "mode": "system",
-    "light": "Nord",
-    "dark": "One Dark"
+    "light": "Nord Light",
+    "dark": "Nord"
   },
   "assistant": {
     "version": "1",

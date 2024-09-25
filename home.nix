@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
+  imports = [ inputs.ags.homeManagerModules.default ];
+
   home.username = "n3rdium";
   home.homeDirectory = "/home/n3rdium";
   home.stateVersion = "24.05"; # Please read the comment before changing.
@@ -61,6 +63,17 @@
     cpio
   ];
 
+  programs.ags = {
+    enable = true;
+    configDir = ./ags;
+
+    # additional packages to add to gjs's runtime
+    extraPackages = with pkgs; [
+      inputs.ags.packages.${pkgs.system}.battery
+      fzf
+    ];
+  };
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -118,6 +131,7 @@
     ".config/kitty/current-theme.conf".source = ./kitty/current-theme.conf;
     ".config/fastfetch/config.jsonc".source = ./fastfetch/config.jsonc;
     ".config/nvim/".source = ./nvim;
+    ".config/zed/".source = ./zed;
     ".zshrc".source = ./.zshrc;
     "wallpapers/".source = ./wallpapers;
   };

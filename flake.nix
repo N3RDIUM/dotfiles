@@ -7,30 +7,31 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ags.url = "github:aylur/ags/v2";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         inherit system;
-	config.allowUnfree = true;
+        config.allowUnfree = true;
       };
       lib = nixpkgs.lib;
 
     in {
       nixosConfigurations.n3rdium = lib.nixosSystem rec {
         inherit system;
-	modules = [
+        modules = [
           ./nixos/configuration.nix
-	  home-manager.nixosModules.home-manager
-	  {
+          home-manager.nixosModules.home-manager
+          {
             home-manager.useGlobalPkgs = true;
-	    home-manager.useUserPackages = true;
-	    home-manager.users.n3rdium = import ./home.nix;
-            home-manager.extraSpecialArgs = { inherit system; };
-	  }
-	];
+            home-manager.useUserPackages = true;
+            home-manager.users.n3rdium = import ./home.nix;
+            home-manager.extraSpecialArgs = { inherit inputs; };
+          }
+        ];
       };
     };
 }
