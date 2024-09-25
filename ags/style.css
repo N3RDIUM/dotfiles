@@ -4,13 +4,17 @@ window.Bar {
     font-weight: bold;
 }
 
-window.Bar>centerbox {
+window.Bar centerbox {
     background: @theme_bg_color;
-    border-radius: 10px;
+    border-radius: 4px;
     margin: 8px;
+    min-width: 42px;
 }
 
-window.Bar button {
-    border-radius: 8px;
-    margin: 2px;
+window.Left centerbox {
+    margin-right: 0;
+}
+
+window.Right centerbox {
+    margin-left: 0;
 }

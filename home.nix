@@ -68,9 +68,10 @@
     configDir = ./ags;
 
     # additional packages to add to gjs's runtime
-    extraPackages = with pkgs; [
-      inputs.ags.packages.${pkgs.system}.battery
-      fzf
+    extraPackages = [
+      inputs.ags.packages.${pkgs.system}.astal
+      inputs.ags.packages.${pkgs.system}.mpris
+      inputs.ags.packages.${pkgs.system}.hyprland
     ];
   };
 

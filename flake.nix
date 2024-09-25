@@ -10,17 +10,13 @@
     ags.url = "github:aylur/ags/v2";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { nixpkgs, home-manager, ... }@inputs:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-      };
       lib = nixpkgs.lib;
 
     in {
-      nixosConfigurations.n3rdium = lib.nixosSystem rec {
+      nixosConfigurations.n3rdium = lib.nixosSystem {
         inherit system;
         modules = [
           ./nixos/configuration.nix

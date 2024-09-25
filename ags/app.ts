@@ -1,11 +1,12 @@
-import { App } from "astal"
-import style from "inline:./style.css"
-import Bar from "./widget/Bar"
+import { App } from "astal";
+import style from "inline:./style.css";
+import RightBar from "./widget/RightBar";
+import LeftBar from "./widget/LeftBar";
 
 App.start({
-    css: style,
-    main() {
-        Bar(0)
-        // Bar(1) // initialize other monitors
-    },
-})
+  css: style,
+  main() {
+    RightBar();
+    LeftBar();
+  },
+});
