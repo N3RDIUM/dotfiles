@@ -132,7 +132,6 @@
     ".config/kitty/current-theme.conf".source = ./kitty/current-theme.conf;
     ".config/fastfetch/config.jsonc".source = ./fastfetch/config.jsonc;
     ".config/nvim/".source = ./nvim;
-    ".config/zed/".source = ./zed;
     ".zshrc".source = ./.zshrc;
     "wallpapers/".source = ./wallpapers;
   };

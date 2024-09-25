@@ -5,10 +5,15 @@ window.Bar {
 }
 
 window.Bar centerbox {
+    background: transparent;
+    margin: 8px;
+}
+
+window.Bar box {
     background: @theme_bg_color;
     border-radius: 4px;
-    margin: 8px;
     min-width: 42px;
+    min-height: 42px;
 }
 
 window.Left centerbox {
@@ -17,4 +22,8 @@ window.Left centerbox {
 
 window.Right centerbox {
     margin-left: 0;
+}
+
+window.Separator {
+    min-height: 4px;
 }
