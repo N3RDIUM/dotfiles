@@ -1,6 +1,5 @@
 import { App, Variable, Astal, Gtk } from "astal";
 import Time from "./Time";
-import Tray from "./Tray";
 
 export default function RightBar() {
   return (
