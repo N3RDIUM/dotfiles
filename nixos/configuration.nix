@@ -110,6 +110,15 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  # Enable GVFS
+  services.gvfs.enable = true;
+
+  # WHY SCHOOL WHY
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.nvidia.acceptLicense = true;
@@ -118,6 +127,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     pkgs.home-manager
+    jmtpfs
     mpv
     vlc
     git

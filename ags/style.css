@@ -9,7 +9,7 @@ window.Bar centerbox {
 
 .Container {
     background: @theme_bg_color;
-    border-radius: 4px;
+    border-radius: 3px;
     min-width: 42px;
     min-height: 42px;
 }
@@ -45,4 +45,10 @@ window.Right centerbox {
 .DateTime {
     padding-top: 6px;
     padding-bottom: 6px;
+}
+.DayLabel {
+    color: #eceff4;
+    font-family: "Fira Code";
+    font-size: 16px;
+    margin: 12px;
 }

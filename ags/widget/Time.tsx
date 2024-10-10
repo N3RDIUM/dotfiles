@@ -20,7 +20,8 @@ const year = Variable<number>(0).poll(
   "date +'%Y'",
   (out: string, prev: number) => parseInt(out),
 );
-const transform = (v) => (v >= 10 ? v.toString() : "0" + v.toString());
+const transform = (v) =>
+  v.toString().length % 2 == 0 ? v.toString() : "0" + v.toString();
 
 export default function Time() {
   return (

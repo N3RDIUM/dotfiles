@@ -9,6 +9,7 @@
 
   home.packages = with pkgs; [
     # Essentials
+    yazi
     floorp
     xfce.thunar
 
@@ -17,6 +18,7 @@
     stellarium
 
     # Code
+    rustup
     nixd
     nixfmt-classic
     vscode
@@ -24,6 +26,7 @@
 
     # Music
     lmms
+    sfizz
     audacity
     pavucontrol
 

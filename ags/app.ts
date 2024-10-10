@@ -7,6 +7,6 @@ App.start({
   css: style,
   main() {
     RightBar();
-    LeftBar();
+    // LeftBar();
   },
 });
