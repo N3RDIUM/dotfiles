@@ -1,12 +1,7 @@
 import { App, Variable, Astal, Gtk } from "astal";
-import Tray from "gi://AstalTray";
+import Tray from "./Tray";
 import Time from "./Time";
-
-const tray = Tray.get_default();
-
-for (const item of tray.get_items()) {
-  print(item.title);
-}
+import Media from "./Media";
 
 export default function RightBar() {
   return (
@@ -42,10 +37,14 @@ export default function RightBar() {
         <box vertical></box>
 
         <box vertical>
-          {/**<box vexpand />
-          <box className="Container"></box>
+          <box vexpand />
+          <box className="Container">
+            <Media />
+          </box>
           <box className="Separator" />
-          <box className="Container"></box>**/}
+          <box className="Container">
+            <Tray />
+          </box>
         </box>
       </centerbox>
     </window>

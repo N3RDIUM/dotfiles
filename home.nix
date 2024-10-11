@@ -50,6 +50,7 @@
     hollywood
     fastfetch
     fira-code
+    fira-code-symbols
     playerctl
 
     # Shell Stuff
@@ -118,8 +119,8 @@
     enable = true;
 
     theme = {
-      name = "Nordic";
-      package = pkgs.nordic;
+      name = "Tokyo Night";
+      package = pkgs.tokyonight-gtk-theme;
     };
 
     iconTheme = {

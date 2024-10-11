@@ -9,7 +9,7 @@ window.Bar centerbox {
 
 .Container {
     background: @theme_bg_color;
-    border-radius: 2px;
+    border-radius: 0px;
     min-width: 42px;
     min-height: 42px;
 }
@@ -74,4 +74,7 @@ window.Right centerbox {
 }
 .VerticalButton:active {
     background-color: #434c5e;
+}
+
+.Tray {
 }
