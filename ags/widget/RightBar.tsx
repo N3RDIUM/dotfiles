@@ -1,6 +1,5 @@
 import { App, Variable, Astal, Gtk } from "astal";
 import Time from "./Time";
-import Day from "./Day";
 
 export default function RightBar() {
   return (
@@ -21,9 +20,7 @@ export default function RightBar() {
             <Time />
           </box>
           <box className="Separator" />
-          <box className="Container">
-            <Day />
-          </box>
+          <box className="Container"></box>
         </box>
 
         <box vertical></box>
