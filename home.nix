@@ -119,7 +119,7 @@
     enable = true;
 
     theme = {
-      name = "Tokyo Night";
+      name = "Tokyonight-Dark";
       package = pkgs.tokyonight-gtk-theme;
     };
 
@@ -132,8 +132,6 @@
   qt = {
     enable = true;
     platformTheme.name = "gtk";
-    style.name = "Nordic";
-    style.package = pkgs.nordic;
   };
 
   home.file = {

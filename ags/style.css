@@ -8,10 +8,8 @@ window.Bar centerbox {
 }
 
 .Container {
-    background: @theme_bg_color;
+    background: #24283b;
     border-radius: 0px;
-    min-width: 42px;
-    min-height: 42px;
 }
 
 window.Left centerbox {
@@ -29,19 +27,19 @@ window.Right centerbox {
 }
 
 .TimeLabel {
-    color: #eceff4;
+    color: #c0caf5;
     font-family: "Fira Code";
     font-size: 24px;
     margin-top: -3px;
     margin-bottom: -3px;
 }
 .DateLabel {
-    color: #d8dee9;
+    color: #a9b1d6;
     font-family: "Fira Code";
     font-size: 12px;
 }
 .BruhLabel {
-    color: #d8dee9;
+    color: #9aa5ce;
     font-family: "Fira Code";
     font-size: 12px;
     opacity: 0.69;
@@ -53,20 +51,23 @@ window.Right centerbox {
 .NixOS-Button {
     background: transparent;
     border: 0px;
+    border-radius: 0px;
     min-width: 30px;
-    font-size: 24px;
+    min-height: 38px;
+    font-size: 28px;
 }
 .NixOS-Button:hover {
     background-color: #4c566a;
-    font-size: 26px;
+    font-size: 30px;
 }
 .NixOS-Button:active {
     background-color: #434c5e;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .VerticalButton {
     background: transparent;
+    border-radius: 0px;
     border: 0px;
 }
 .VerticalButton:hover {
