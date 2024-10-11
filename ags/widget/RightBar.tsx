@@ -33,7 +33,9 @@ export default function RightBar() {
           </box>
           <box className="Separator" />
           <box className="Container">
-            <Time />
+            <button className={"VerticalButton"}>
+              <Time />
+            </button>
           </box>
         </box>
 

@@ -9,7 +9,7 @@ window.Bar centerbox {
 
 .Container {
     background: @theme_bg_color;
-    border-radius: 3px;
+    border-radius: 2px;
     min-width: 42px;
     min-height: 42px;
 }
@@ -32,7 +32,6 @@ window.Right centerbox {
     color: #eceff4;
     font-family: "Fira Code";
     font-size: 24px;
-    margin-left: 6px;
     margin-top: -3px;
     margin-bottom: -3px;
 }
@@ -40,14 +39,12 @@ window.Right centerbox {
     color: #d8dee9;
     font-family: "Fira Code";
     font-size: 12px;
-    margin-left: 6px;
 }
 .BruhLabel {
     color: #d8dee9;
     font-family: "Fira Code";
     font-size: 12px;
-    margin-left: 6px;
-    opacity: 0.64;
+    opacity: 0.69;
 }
 .DateTime {
     padding-top: 6px;
@@ -66,4 +63,15 @@ window.Right centerbox {
 .NixOS-Button:active {
     background-color: #434c5e;
     font-size: 22px;
+}
+
+.VerticalButton {
+    background: transparent;
+    border: 0px;
+}
+.VerticalButton:hover {
+    background-color: #4c566a;
+}
+.VerticalButton:active {
+    background-color: #434c5e;
 }

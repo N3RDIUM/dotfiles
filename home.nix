@@ -10,6 +10,11 @@
   home.packages = with pkgs; [
     # Essentials
     yazi
+    ffmpegthumbnailer
+    jq
+    poppler
+    fd
+    imagemagick
     floorp
     xfce.thunar
 
