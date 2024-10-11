@@ -42,13 +42,28 @@ window.Right centerbox {
     font-size: 12px;
     margin-left: 6px;
 }
+.BruhLabel {
+    color: #d8dee9;
+    font-family: "Fira Code";
+    font-size: 12px;
+    margin-left: 6px;
+    opacity: 0.64;
+}
 .DateTime {
     padding-top: 6px;
     padding-bottom: 6px;
 }
-.DayLabel {
-    color: #eceff4;
-    font-family: "Fira Code";
-    font-size: 16px;
-    margin: 12px;
+.NixOS-Button {
+    background: transparent;
+    border: 0px;
+    min-width: 30px;
+    font-size: 24px;
+}
+.NixOS-Button:hover {
+    background-color: #4c566a;
+    font-size: 26px;
+}
+.NixOS-Button:active {
+    background-color: #434c5e;
+    font-size: 22px;
 }

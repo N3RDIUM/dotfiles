@@ -1,5 +1,12 @@
 import { App, Variable, Astal, Gtk } from "astal";
+import Tray from "gi://AstalTray";
 import Time from "./Time";
+
+const tray = Tray.get_default();
+
+for (const item of tray.get_items()) {
+  print(item.title);
+}
 
 export default function RightBar() {
   return (
@@ -17,10 +24,17 @@ export default function RightBar() {
       <centerbox vertical hexpand>
         <box vertical>
           <box className="Container">
-            <Time />
+            <button className={"NixOS-Button"}>
+              <icon
+                className={"NixOS-Icon"}
+                icon={"/home/n3rdium/.dotfiles/ags/assets/nixos.svg"}
+              />
+            </button>
           </box>
           <box className="Separator" />
-          <box className="Container"></box>
+          <box className="Container">
+            <Time />
+          </box>
         </box>
 
         <box vertical></box>

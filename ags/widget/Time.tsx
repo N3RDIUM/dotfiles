@@ -37,12 +37,12 @@ const transform2 = (v) => v.toString().slice(0, 4).toUpperCase();
 export default function Time() {
   return (
     <box vertical className={"DateTime"}>
-      <label className={"DateLabel"} label={month(transform2)} />
+      <label className={"BruhLabel"} label={month(transform2)} />
       <label className={"DateLabel"} label={dm(transform)} />
       <label className={"TimeLabel"} label={hour(transform)} />
       <label className={"TimeLabel"} label={minute(transform)} />
       <label className={"DateLabel"} label={year(transform)} />
-      <label className={"DateLabel"} label={day(transform2)} />
+      <label className={"BruhLabel"} label={day(transform2)} />
     </box>
   );
 }
