@@ -45,7 +45,7 @@ export default function Workspaces() {
       }}
     >
       <box vertical className={"Workspaces"}>
-        {[...Array(9).keys()].map((i) => (
+        {[...Array(10).keys()].map((i) => (
           <Workspace id={i + 1} />
         ))}
       </box>
