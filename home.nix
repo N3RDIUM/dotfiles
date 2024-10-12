@@ -50,7 +50,6 @@
     hollywood
     fastfetch
     fira-code
-    fira-code-symbols
     playerctl
 
     # Shell Stuff

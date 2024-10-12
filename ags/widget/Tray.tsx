@@ -2,10 +2,14 @@ import AstalTray from "gi://AstalTray";
 import { App, Variable, Astal, Gtk, bind } from "astal";
 
 const tray = AstalTray.Tray.get_default();
-for (const item of tray.get_items()) {
-  print(item.title);
-}
+print(tray.get_items());
 
 export default function Tray() {
-  return <box vertical className={"Tray"}></box>;
+  return (
+    <box vertical className={"Tray"}>
+      {tray.get_items().map((item) => {
+        <icon icon={item.get_icon_name()} />;
+      })}
+    </box>
+  );
 }

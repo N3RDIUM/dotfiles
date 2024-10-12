@@ -2,6 +2,7 @@ import { App, Variable, Astal, Gtk } from "astal";
 import Tray from "./Tray";
 import Time from "./Time";
 import Media from "./Media";
+import Workspaces from "./Workspaces";
 
 export default function RightBar() {
   return (
@@ -34,7 +35,11 @@ export default function RightBar() {
           </box>
         </box>
 
-        <box vertical></box>
+        <box vertical>
+          <box className="Container">
+            <Workspaces />
+          </box>
+        </box>
 
         <box vertical>
           <box vexpand />

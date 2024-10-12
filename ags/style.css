@@ -8,7 +8,7 @@ window.Bar centerbox {
 }
 
 .Container {
-    background: #24283b;
+    background: #1a1b26;
     border-radius: 0px;
 }
 
@@ -57,12 +57,12 @@ window.Right centerbox {
     font-size: 28px;
 }
 .NixOS-Button:hover {
-    background-color: #4c566a;
+    background-color: #414868;
     font-size: 30px;
 }
 .NixOS-Button:active {
-    background-color: #434c5e;
-    font-size: 24px;
+    background-color: #24283b;
+    font-size: 26px;
 }
 
 .VerticalButton {
@@ -71,11 +71,31 @@ window.Right centerbox {
     border: 0px;
 }
 .VerticalButton:hover {
-    background-color: #4c566a;
+    background-color: #414868;
 }
 .VerticalButton:active {
-    background-color: #434c5e;
+    background-color: #24283b;
 }
 
-.Tray {
+.Workspace {
+    background-color: #565f89;
+    border-radius: 12px;
+    min-width: 12px;
+    min-height: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.Active {
+    background-color: #7aa2f7;
+}
+.Occupied {
+    background-color: #a9b1d6;
+}
+.WorkspaceClick {
+    background-color: transparent;
+    all: unset;
+}
+.Workspaces {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
