@@ -22,17 +22,20 @@ const year = Variable<number>(0).poll(
 );
 const day = Variable<string>("").poll(
   1000,
-  'date +"%A"',
+  'date +"%a"',
   (out: string, prev: string) => out,
 );
 const month = Variable<string>("").poll(
   1000,
-  'date +"%B"',
+  'date +"%b"',
   (out: string, prev: string) => out,
 );
 const transform = (v) =>
   v.toString().length % 2 == 0 ? v.toString() : "0" + v.toString();
-const transform2 = (v) => v.toString().slice(0, 4).toUpperCase();
+const transform2 = (v) =>
+  v.toString().length % 2 == 0
+    ? v.toString().toUpperCase()
+    : "X" + v.toString().toUpperCase();
 
 export default function Time() {
   return (

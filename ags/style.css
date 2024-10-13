@@ -1,3 +1,7 @@
+* {
+    transition-timing-function: ease-in-out;
+}
+
 window.Bar {
     background: transparent;
 }
@@ -84,9 +88,11 @@ window.Right centerbox {
     min-height: 12px;
     margin-top: 6px;
     margin-bottom: 6px;
+    transition-duration: 150ms;
 }
 .Active {
     background-color: #7aa2f7;
+    border-radius: 3px;
 }
 .Occupied {
     background-color: #a9b1d6;
