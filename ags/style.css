@@ -92,7 +92,7 @@ window.Right centerbox {
 }
 .Active {
     background-color: #7aa2f7;
-    min-width: 21.32px;
+    min-width: 21.32px; /* 16x9 */
     min-height: 12px;
     border-radius: 3px;
 }

@@ -51,6 +51,7 @@
     fastfetch
     fira-code
     playerctl
+    obs-studio
 
     # Shell Stuff
     zoxide
