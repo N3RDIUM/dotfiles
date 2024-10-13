@@ -92,6 +92,8 @@ window.Right centerbox {
 }
 .Active {
     background-color: #7aa2f7;
+    min-width: 21.32px;
+    min-height: 12px;
     border-radius: 3px;
 }
 .Occupied {
@@ -99,7 +101,25 @@ window.Right centerbox {
 }
 .WorkspaceClick {
     background-color: transparent;
-    all: unset;
+    transition-duration: 240ms;
+    min-width: unset;
+    min-height: unset;
+    margin: unset;
+    padding: unset;
+    border: unset;
+}
+.WorkspaceClick:hover {
+    background-color: transparent;
+    transition-duration: 240ms;
+    min-width: unset;
+    min-height: unset;
+    margin: unset;
+    padding: unset;
+    border: unset;
+}
+.WorkspaceClick:hover {
+    min-width: 16px;
+    min-height: 16px;
 }
 .Workspaces {
     padding-top: 12px;
