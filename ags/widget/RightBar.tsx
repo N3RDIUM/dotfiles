@@ -1,4 +1,4 @@
-import { App, Variable, Astal, Gtk } from "astal";
+import { Variable, Gtk } from "astal";
 import Tray from "./Tray";
 import Time from "./Time";
 import Media from "./Media";

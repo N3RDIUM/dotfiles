@@ -64,7 +64,7 @@
     # theme = "where_is_my_sddm_theme";
   };
   programs.hyprland.enable = true;
-  services.xserver.enable = false; # DONT ENABLE DIS PLEEZE
+  services.xserver.enable = true;
   services.desktopManager.plasma6.enable = true;
 
   # Switch to ZSH
@@ -127,6 +127,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     pkgs.home-manager
+    usbutils
     jmtpfs
     mpv
     vlc
@@ -145,8 +146,25 @@
   ];
   environment.variables.EDITOR = "nvim";
 
+  # Fix nix
   programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [ ];
+  programs.nix-ld.libraries = with pkgs; [
+    xorg.libX11
+    gcc-unwrapped
+    glibc
+    zlib
+    glfw
+    rust-analyzer
+    ruff
+    ruff-lsp
+    cmake
+    meson
+    cpio
+    nixfmt-classic
+    gcc
+    SDL2
+    SDL2.dev
+  ];
 
   # Mount some stuff
   boot.supportedFilesystems = [ "ntfs" ];

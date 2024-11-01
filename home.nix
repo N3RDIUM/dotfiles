@@ -10,6 +10,7 @@
   home.packages = with pkgs; [
     # Essentials
     yazi
+    spacedrive
     ffmpegthumbnailer
     jq
     poppler
@@ -19,13 +20,14 @@
     xfce.thunar
 
     # Astro
+    gimp
     siril
     stellarium
 
     # Code
+    linuxPackages_latest.perf
+    python310
     rustup
-    nixd
-    nixfmt-classic
     vscode
     zed-editor
 
@@ -34,8 +36,10 @@
     sfizz
     audacity
     pavucontrol
+    youtube-music
 
     # Prod
+    inkscape
     blender
     obsidian
 
@@ -63,13 +67,8 @@
     # Miscellaneous
     lxappearance
     ollama
-    discord
+    discord-canary
     ani-cli
-
-    # Deps
-    cmake
-    meson
-    cpio
   ];
 
   programs.ags = {
@@ -78,7 +77,7 @@
 
     # additional packages to add to gjs's runtime
     extraPackages = [
-      inputs.ags.packages.${pkgs.system}.astal
+      inputs.ags.packages.${pkgs.system}.astal3
       inputs.ags.packages.${pkgs.system}.mpris
       inputs.ags.packages.${pkgs.system}.hyprland
       inputs.ags.packages.${pkgs.system}.tray
