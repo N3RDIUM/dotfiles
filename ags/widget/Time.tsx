@@ -1,5 +1,3 @@
-import { App, Variable, Astal, Gtk, bind } from "astal";
-
 const hour = Variable<number>(0).poll(
   1000,
   "date +'%H'",

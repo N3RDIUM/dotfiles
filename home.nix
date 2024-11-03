@@ -25,6 +25,8 @@
     stellarium
 
     # Code
+    nixd
+    ruff
     linuxPackages_latest.perf
     python310
     rustup

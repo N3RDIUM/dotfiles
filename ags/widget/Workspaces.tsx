@@ -1,5 +1,4 @@
 import Hyprland from "gi://AstalHyprland";
-import { bind, Gdk, Gtk, Variable, Widget } from "astal";
 
 const hyprland = Hyprland.get_default();
 
