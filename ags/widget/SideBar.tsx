@@ -45,13 +45,13 @@ export default function SideBar() {
 
         <box vertical vexpand hexpand />
 
-        <box className="Container">
-          <Workspaces />
-        </box>
+        {/* <box className="Container"> */}
+        {/* <Workspaces /> */}
+        {/* </box> */}
 
         <box className="Separator" />
 
-        <box className="Container">
+        <box className="Container Tray">
           <Tray />
         </box>
       </box>

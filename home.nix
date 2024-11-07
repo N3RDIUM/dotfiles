@@ -3,9 +3,9 @@
 {
   imports = [ inputs.ags.homeManagerModules.default ];
 
-  home.username = "n3rdium";
+  home.username      = "n3rdium";
   home.homeDirectory = "/home/n3rdium";
-  home.stateVersion = "24.05"; # Please read the comment before changing.
+  home.stateVersion  = "24.05"; # Please read the comment before changing.
 
   home.packages = with pkgs; [
     # Essentials
@@ -62,7 +62,7 @@
   ];
 
   programs.ags = {
-    enable = true;
+    enable    = true;
     configDir = ./ags;
 
     # additional packages to add to gjs's runtime
@@ -75,19 +75,20 @@
   };
 
   programs.zoxide = {
-    enable = true;
+    enable               = true;
     enableZshIntegration = true;
   };
 
   programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-    autosuggestion.enable = true;
+    enable                    = true;
+    enableCompletion          = true;
+    autosuggestion.enable     = true;
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      ll = "ls -l";
-      update = "sudo nixos-rebuild switch";
+      ff  = "fastfetch";
+      cff = "clear && fastfetch";
+      zed = "zeditor";
     };
 
     history = {
@@ -96,16 +97,16 @@
     };
 
     oh-my-zsh = {
-      enable = true;
+      enable  = true;
       plugins = [ "git" ];
-      theme = "pure";
+      theme   = "pure";
     };
   };
 
   programs.git = {
-    enable = true;
-    userName = "n3rdium";
-    userEmail = "n3rdium@gmail.com";
+    enable      = true;
+    userName    = "n3rdium";
+    userEmail   = "n3rdium@gmail.com";
     extraConfig = { credential.helper = "oauth"; };
   };
 
@@ -113,29 +114,28 @@
     enable = true;
 
     theme = {
-      name = "Tokyonight-Dark";
+      name    = "Tokyonight-Dark";
       package = pkgs.tokyonight-gtk-theme;
     };
 
     iconTheme = {
-      name = "Awaita";
+      name    = "Awaita";
       package = pkgs.adwaita-icon-theme;
     };
   };
 
   qt = {
-    enable = true;
+    enable             = true;
     platformTheme.name = "gtk";
   };
 
   home.file = {
-    ".config/hypr/hyprland.conf".source = ./hypr/hyprland.conf;
-    ".config/kitty/kitty.conf".source = ./kitty/kitty.conf;
+    ".config/hypr/hyprland.conf".source       = ./hypr/hyprland.conf;
+    ".config/kitty/kitty.conf".source         = ./kitty/kitty.conf;
     ".config/kitty/current-theme.conf".source = ./kitty/current-theme.conf;
-    ".config/fastfetch/config.jsonc".source = ./fastfetch/config.jsonc;
-    ".config/nvim/".source = ./nvim;
-    ".zshrc".source = ./.zshrc;
-    "wallpapers/".source = ./wallpapers;
+    ".config/fastfetch/config.jsonc".source   = ./fastfetch/config.jsonc;
+    ".zshrc".source                           = ./.zshrc;
+    "wallpapers/".source                      = ./wallpapers;
   };
 
   home.sessionVariables = { EDITOR = "zed --wait"; };

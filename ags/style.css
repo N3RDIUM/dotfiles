@@ -119,6 +119,10 @@ window.Bar {
     padding-bottom: 12px;
 }
 
+.Tray {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
 .TrayItem {
     all: unset;
     border: 0px;
@@ -126,15 +130,17 @@ window.Bar {
     min-width: 28px;
     min-height: 28px;
     padding: 2px;
-    margin: 9px;
-    font-size: 20px;
+    margin-left: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 22px;
     transition-duration: 64ms;
 }
 .TrayItem:hover {
     background-color: #414868;
-    font-size: 22px;
+    font-size: 24px;
 }
 .TrayItem:active {
     background-color: #24283b;
-    font-size: 18px;
+    font-size: 20px;
 }
