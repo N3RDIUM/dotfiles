@@ -19,40 +19,42 @@ export default function SideBar() {
       }
       application={App}
     >
-      <centerbox vertical hexpand>
-        <box vertical>
-          <box className="Container">
-            <button className={"NixOS-Button"}>
-              <icon
-                className={"NixOS-Icon"}
-                icon={"/home/n3rdium/.dotfiles/ags/assets/nixos.svg"}
-              />
-            </button>
-          </box>
-          <box className="Separator" />
-          <box className="Container">
-            <button className={"VerticalButton"}>
-              <Time />
-            </button>
-          </box>
+      <box className={"BarContainer"} vertical hexpand>
+        <box className="Container">
+          <button className={"NixOS-Button"}>
+            <icon
+              className={"NixOS-Icon"}
+              icon={"/home/n3rdium/.dotfiles/ags/assets/nixos.svg"}
+            />
+          </button>
         </box>
 
-        <box vertical>
-          <box className="Container">
-            <Workspaces />
-          </box>
+        <box className="Separator" />
+
+        <box className="Container">
+          <button className={"VerticalButton"}>
+            <Time />
+          </button>
         </box>
 
-        <box vertical>
-          <box vexpand />
-          <box className="Container">
-            <Media />
-          </box>
-          <box className="Container">
-            <Tray />
-          </box>
+        <box className="Separator" />
+
+        <box className="Container">
+          <Media />
         </box>
-      </centerbox>
+
+        <box vertical vexpand hexpand />
+
+        <box className="Container">
+          <Workspaces />
+        </box>
+
+        <box className="Separator" />
+
+        <box className="Container">
+          <Tray />
+        </box>
+      </box>
     </window>
   );
 }

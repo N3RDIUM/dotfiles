@@ -6,22 +6,15 @@ window.Bar {
     background: transparent;
 }
 
-window.Bar centerbox {
+.BarContainer {
     background: transparent;
     margin: 8px;
+    margin-right: 0;
 }
 
 .Container {
     background: #1a1b26;
     border-radius: 0px;
-}
-
-window.Left centerbox {
-    margin-right: 0;
-}
-
-window.Right centerbox {
-    margin-left: 0;
 }
 
 .Separator {
@@ -124,4 +117,24 @@ window.Right centerbox {
 .Workspaces {
     padding-top: 12px;
     padding-bottom: 12px;
+}
+
+.TrayItem {
+    all: unset;
+    border: 0px;
+    border-radius: 4px;
+    min-width: 28px;
+    min-height: 28px;
+    padding: 2px;
+    margin: 9px;
+    font-size: 20px;
+    transition-duration: 64ms;
+}
+.TrayItem:hover {
+    background-color: #414868;
+    font-size: 22px;
+}
+.TrayItem:active {
+    background-color: #24283b;
+    font-size: 18px;
 }
