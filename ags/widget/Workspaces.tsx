@@ -1,4 +1,5 @@
 import Hyprland from "gi://AstalHyprland";
+import { Variable, bind } from "astal";
 
 const hyprland = Hyprland.get_default();
 

@@ -16,18 +16,18 @@
       lib = nixpkgs.lib;
 
     in {
-      nixosConfigurations.n3rdium = lib.nixosSystem {
-        inherit system;
-        modules = [
-          ./nixos/configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.n3rdium = import ./home.nix;
-            home-manager.extraSpecialArgs = { inherit inputs; };
-          }
-        ];
-      };
+        nixosConfigurations.n3rdium = lib.nixosSystem {
+            inherit system;
+            modules = [
+            ./nixos/configuration.nix
+            home-manager.nixosModules.home-manager
+                {
+                    home-manager.useGlobalPkgs = true;
+                    home-manager.useUserPackages = true;
+                    home-manager.users.n3rdium = import ./home.nix;
+                    home-manager.extraSpecialArgs = { inherit inputs; };
+                }
+            ];
+        };
     };
 }

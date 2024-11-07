@@ -9,14 +9,8 @@
 
   home.packages = with pkgs; [
     # Essentials
-    yazi
-    spacedrive
-    ffmpegthumbnailer
-    jq
-    poppler
-    fd
-    imagemagick
     floorp
+    imagemagick
     xfce.thunar
 
     # Astro
@@ -27,22 +21,18 @@
     # Code
     nixd
     ruff
-    linuxPackages_latest.perf
-    python310
     rustup
     vscode
     zed-editor
 
     # Music
     lmms
-    sfizz
     audacity
     pavucontrol
     youtube-music
 
     # Prod
-    inkscape
-    blender
+    # blender
     obsidian
 
     # Rice Stuff
@@ -51,7 +41,6 @@
     swww
     dunst
     cmatrix
-    wlsunset
     hyprshot
     hollywood
     fastfetch
@@ -60,14 +49,13 @@
     obs-studio
 
     # Shell Stuff
-    zoxide
+    fd
     atuin
     pure-prompt
     zsh-autosuggestions
     git-credential-oauth
 
     # Miscellaneous
-    lxappearance
     ollama
     discord-canary
     ani-cli
@@ -84,6 +72,11 @@
       inputs.ags.packages.${pkgs.system}.hyprland
       inputs.ags.packages.${pkgs.system}.tray
     ];
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
   };
 
   programs.zsh = {

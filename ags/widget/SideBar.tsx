@@ -3,14 +3,17 @@ import Time from "./Time";
 import Media from "./Media";
 import Workspaces from "./Workspaces";
 
-export default function RightBar() {
+import { App } from "astal/gtk3";
+import { Astal } from "astal/gtk3";
+
+export default function SideBar() {
   return (
     <window
-      className="Bar Right"
+      className="Bar Left"
       monitor={0}
       exclusivity={Astal.Exclusivity.EXCLUSIVE}
       anchor={
-        Astal.WindowAnchor.RIGHT |
+        Astal.WindowAnchor.LEFT |
         Astal.WindowAnchor.TOP |
         Astal.WindowAnchor.BOTTOM
       }
@@ -45,7 +48,6 @@ export default function RightBar() {
           <box className="Container">
             <Media />
           </box>
-          <box className="Separator" />
           <box className="Container">
             <Tray />
           </box>
