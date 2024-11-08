@@ -47,6 +47,7 @@
     fira-code
     playerctl
     obs-studio
+    hyprpicker
 
     # Shell Stuff
     fd
@@ -130,12 +131,12 @@
   };
 
   home.file = {
-    ".config/hypr/hyprland.conf".source       = ./hypr/hyprland.conf;
-    ".config/kitty/kitty.conf".source         = ./kitty/kitty.conf;
-    ".config/kitty/current-theme.conf".source = ./kitty/current-theme.conf;
-    ".config/fastfetch/config.jsonc".source   = ./fastfetch/config.jsonc;
-    ".zshrc".source                           = ./.zshrc;
-    "wallpapers/".source                      = ./wallpapers;
+    ".config/hypr/".source      = ./hypr;
+    ".config/kitty/".source     = ./kitty;
+    ".config/fastfetch/".source = ./fastfetch;
+    ".config/cava/".source      = ./cava;
+    ".zshrc".source             = ./.zshrc;
+    "wallpapers/".source        = ./wallpapers;
   };
 
   home.sessionVariables = { EDITOR = "zed --wait"; };
