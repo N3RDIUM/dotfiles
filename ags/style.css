@@ -180,3 +180,8 @@ menu menuitem,
     background-color: #24283b;
     font-size: 21px;
 }
+
+.PaneContainer {
+    min-width: 420px;
+    background: #24283b;
+}
