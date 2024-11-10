@@ -34,6 +34,7 @@
     # Prod
     # blender
     obsidian
+    kdenlive
 
     # Rice Stuff
     cava
@@ -131,12 +132,15 @@
   };
 
   home.file = {
-    ".config/hypr/".source      = ./hypr;
-    ".config/kitty/".source     = ./kitty;
-    ".config/fastfetch/".source = ./fastfetch;
-    ".config/cava/".source      = ./cava;
-    ".zshrc".source             = ./.zshrc;
-    "wallpapers/".source        = ./wallpapers;
+    ".config/hypr/".source             = ./hypr;
+    ".config/kitty/".source            = ./kitty;
+    ".config/fastfetch/".source        = ./fastfetch;
+    ".config/cava/".source             = ./cava;
+    ".config/atuin/".source            = ./atuin;
+    ".config/siril/".source            = ./siril;
+    ".config/zed/settings.json".source = ./zed/settings.json;
+    ".zshrc".source                    = ./.zshrc;
+    "wallpapers/".source               = ./wallpapers;
   };
 
   home.sessionVariables = { EDITOR = "zed --wait"; };

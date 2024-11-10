@@ -6,6 +6,41 @@ window.Bar {
     background: transparent;
 }
 
+menu,
+.menu,
+.context-menu {
+    font-family: Fira Code;
+    margin: 4px;
+    padding: 6px;
+    background: #24283b;
+    border-radius: 4px;
+    border: none;
+}
+
+.csd menu,
+.csd .menu,
+.csd .context-menu {
+    border: none;
+    border-radius: 4px;
+}
+
+menu:backdrop,
+.menu:backdrop,
+.context-menu:backdrop {
+    background-color: #24283b;
+}
+
+menu menuitem,
+.menu menuitem,
+.context-menu menuitem {
+    font-family: Fira Code;
+    min-height: 17px;
+    min-width: 40px;
+    padding: 4px 6px;
+    text-shadow: none;
+    border-radius: 4px;
+}
+
 .BarContainer {
     background: transparent;
     margin: 8px;
@@ -52,6 +87,7 @@ window.Bar {
     min-width: 30px;
     min-height: 38px;
     font-size: 28px;
+    transition-duration: 84ms;
 }
 .NixOS-Button:hover {
     background-color: #414868;
@@ -59,7 +95,7 @@ window.Bar {
 }
 .NixOS-Button:active {
     background-color: #24283b;
-    font-size: 26px;
+    font-size: 27px;
 }
 
 .VerticalButton {
@@ -142,5 +178,5 @@ window.Bar {
 }
 .TrayItem:active {
     background-color: #24283b;
-    font-size: 20px;
+    font-size: 21px;
 }
