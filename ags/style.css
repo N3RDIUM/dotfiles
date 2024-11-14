@@ -185,3 +185,51 @@ menu menuitem,
     min-width: 420px;
     background: #24283b;
 }
+.dashboard-container {
+    padding: 42px;
+}
+.NixOS-PaneIcon {
+    min-width: 420px;
+    min-height: 420px;
+    font-size: 320px;
+}
+.pane-1x1 {
+    min-width: 76px;
+    min-height: 76px;
+    margin: 4px 4px;
+    padding: 0;
+    border-radius: 4px;
+}
+.avatar {
+    margin: 8px;
+    border-radius: 42px;
+    background: url("assets/n3rdium.png");
+    background-size: cover;
+}
+.icon-1x1 {
+    font-size: 42px;
+    color: #9aa5ce;
+    font-family: Font Awesome;
+}
+
+.dock {
+    padding: 6px 0;
+}
+.dockIcon {
+    all: unset;
+    min-width: 30px;
+    min-height: 38px;
+    font-size: 28px;
+    margin: 0 5px;
+    border-radius: 4px;
+    padding: 0 4px;
+    transition-duration: 80ms;
+}
+.dockIcon:hover {
+    background-color: #414868;
+    font-size: 30px;
+}
+.dockIcon:active {
+    background-color: #24283b;
+    font-size: 27px;
+}

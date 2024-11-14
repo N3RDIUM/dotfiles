@@ -1,8 +1,8 @@
 import { App, Astal, Gtk } from "astal/gtk3";
 import { Variable, bind } from "astal";
 
-const showPane = Variable(false);
-const visibleName = Variable("NixOS");
+export const showPane = Variable(false);
+export const visibleName = Variable("NixOS");
 
 // Thanks, Aylur!
 function StackSwitcher({ children }: { children?: Array<JSX.Element> }) {
@@ -12,16 +12,11 @@ function StackSwitcher({ children }: { children?: Array<JSX.Element> }) {
 
   return (
     <box>
-      <box vertical>
-        {children!.map((ch) => (
-          <button onClick={() => visibleName.set(ch.name)}>{ch.name}</button>
-        ))}
-      </box>
       <stack
         hexpand
         vexpand
         transition_type={Gtk.StackTransitionType.SLIDE_UP_DOWN}
-        transitionDuration={64}
+        transitionDuration={42}
         visibleChildName={visibleName()}
       >
         {children}
@@ -30,7 +25,7 @@ function StackSwitcher({ children }: { children?: Array<JSX.Element> }) {
   );
 }
 
-export default function Pane() {
+export function Pane() {
   return (
     <window
       className="Pane Right"
@@ -44,13 +39,30 @@ export default function Pane() {
       application={App}
     >
       <revealer
-        transition_type={Gtk.RevealerTransitionType.SLIDE_RIGHT}
+        transition_type={Gtk.RevealerTransitionType.SLIDE_LEFT}
         transition_duration={128}
         reveal_child={bind(showPane)}
       >
         <box className={"PaneContainer"} vertical hexpand vexpand>
           <StackSwitcher>
-            <box name="NixOS">Nick's OS</box>
+            <box name="NixOS" vertical>
+              <icon className={"NixOS-PaneIcon"} icon={"./assets/nixos.svg"} />
+              <box hexpand className={"dashboard-container"}>
+                <button className="pane-1x1">
+                  <box className="avatar"></box>
+                </button>
+                <button className="pane-1x1">
+                  <label className="icon-1x1" label=""></label>
+                </button>
+                <button className="pane-1x1">
+                  <label className="icon-1x1" label=""></label>
+                </button>
+                <button className="pane-1x1">
+                  <label className="icon-1x1" label=""></label>
+                </button>
+              </box>
+            </box>
+
             <box name="Time">Time</box>
             <box name="Calendar">Calendar</box>
           </StackSwitcher>

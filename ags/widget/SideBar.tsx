@@ -1,10 +1,11 @@
 import Tray from "./Tray";
 import Time from "./Time";
 import Media from "./Media";
+import Dock from "./Dock";
 import Workspaces from "./Workspaces";
 
-import { App } from "astal/gtk3";
-import { Astal } from "astal/gtk3";
+import { App, Astal } from "astal/gtk3";
+import { execAsync } from "astal";
 
 export default function SideBar() {
   return (
@@ -21,7 +22,12 @@ export default function SideBar() {
     >
       <box className={"BarContainer"} vertical hexpand>
         <box className="Container">
-          <button className={"NixOS-Button"}>
+          <button
+            className={"NixOS-Button"}
+            onClick={() => {
+              execAsync("ags request 'pane NixOS'");
+            }}
+          >
             <icon
               className={"NixOS-Icon"}
               icon={"/home/n3rdium/.dotfiles/ags/assets/nixos.svg"}
@@ -32,7 +38,12 @@ export default function SideBar() {
         <box className="Separator" />
 
         <box className="Container">
-          <button className={"VerticalButton"}>
+          <button
+            className={"VerticalButton"}
+            onClick={() => {
+              execAsync("ags request 'pane Time'");
+            }}
+          >
             <Time />
           </button>
         </box>
@@ -41,6 +52,12 @@ export default function SideBar() {
 
         <box className="Container">
           <Media />
+        </box>
+
+        <box className="Separator" />
+
+        <box className="Container">
+          <Dock />
         </box>
 
         <box vertical vexpand hexpand />
