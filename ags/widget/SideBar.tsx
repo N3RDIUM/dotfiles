@@ -38,6 +38,26 @@ export default function SideBar() {
         <box className="Separator" />
 
         <box className="Container">
+          <Workspaces />
+        </box>
+
+        <box className="Separator" />
+
+        <box className="Container">
+          <Dock />
+        </box>
+
+        <box className="Separator" />
+
+        <box vertical vexpand hexpand />
+
+        <box className="Separator" />
+
+        <box className="Container">
+          <Media />
+        </box>
+
+        <box className="Container">
           <button
             className={"VerticalButton"}
             onClick={() => {
@@ -47,24 +67,6 @@ export default function SideBar() {
             <Time />
           </button>
         </box>
-
-        <box className="Separator" />
-
-        <box className="Container">
-          <Media />
-        </box>
-
-        <box className="Separator" />
-
-        <box className="Container">
-          <Dock />
-        </box>
-
-        <box vertical vexpand hexpand />
-
-        {/* <box className="Container"> */}
-        {/* <Workspaces /> */}
-        {/* </box> */}
 
         <box className="Separator" />
 

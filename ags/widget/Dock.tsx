@@ -11,7 +11,7 @@ const apps = new Apps.Apps({
 
 const ALIASES = { "dev.zed.Zed": "zed" };
 
-export default function Dock({ id }: { id: number }) {
+export default function Dock() {
   const clients = Variable.derive(
     [bind(hyprland, "clients"), bind(hyprland, "focusedWorkspace")],
     (clients, workspace) => {

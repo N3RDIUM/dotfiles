@@ -25,7 +25,6 @@ const Workspace = ({ id }: { id: number }) => {
     <box>
       <box hexpand />
       <button
-        vexpand
         className={"WorkspaceClick"}
         onClick={() => hyprland.dispatch("workspace", `${id}`)}
       >
@@ -39,8 +38,6 @@ const Workspace = ({ id }: { id: number }) => {
 export default function Workspaces() {
   return (
     <eventbox
-      hexpand
-      vexpand
       onScroll={(_, e) => {
         hyprland.dispatch("workspace", e.delta_y > 0 ? "+1" : "-1");
       }}
