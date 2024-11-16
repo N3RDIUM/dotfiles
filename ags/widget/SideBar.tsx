@@ -1,11 +1,11 @@
 import Tray from "./Tray";
 import Time from "./Time";
 import Media from "./Media";
-import Dock from "./Dock";
+import { Dock, dockVisible } from "./Dock";
 import Workspaces from "./Workspaces";
 
 import { App, Astal } from "astal/gtk3";
-import { execAsync } from "astal";
+import { bind, execAsync } from "astal";
 
 export default function SideBar() {
   return (
@@ -41,9 +41,9 @@ export default function SideBar() {
           <Workspaces />
         </box>
 
-        <box className="Separator" />
+        <box className="Separator" visible={bind(dockVisible)} />
 
-        <box className="Container">
+        <box className="Container" visible={bind(dockVisible)}>
           <Dock />
         </box>
 

@@ -11,7 +11,9 @@ const apps = new Apps.Apps({
 
 const ALIASES = { "dev.zed.Zed": "zed" };
 
-export default function Dock() {
+export const dockVisible = Variable(false);
+
+export function Dock() {
   const clients = Variable.derive(
     [bind(hyprland, "clients"), bind(hyprland, "focusedWorkspace")],
     (clients, workspace) => {
@@ -38,6 +40,8 @@ export default function Dock() {
         }
       }
 
+      dockVisible.set(Boolean(ret.length));
+
       return (
         <box vertical homogeneous>
           {ret.map((item) => item)}
@@ -47,7 +51,7 @@ export default function Dock() {
   );
 
   return (
-    <box>
+    <box visible={bind(dockVisible)}>
       <box className="dock" hexpand child={bind(clients)} />
       <box />
     </box>
