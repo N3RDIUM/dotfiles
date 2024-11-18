@@ -34,8 +34,7 @@ export const Tray = () => {
 
   const setup = (self: Widget.Box) => {
     self.children = tray.get_items().map((item) => TrayItem(item.itemId, item));
-    console.log(self.children, self.children.length);
-    trayVisible.set(self.children.length > 0);
+    trayVisible.set(Boolean(self.children.length));
 
     itemAddedId = tray.connect("item-added", (_, itemId) =>
       self.add(TrayItem(itemId, tray.get_item(itemId))),

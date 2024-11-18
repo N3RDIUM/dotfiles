@@ -68,9 +68,9 @@ export default function SideBar() {
           </button>
         </box>
 
-        <box className="Separator" />
+        <box className="Separator" visible={bind(trayVisible)} />
 
-        <box className="Container Tray">
+        <box className="Container Tray" visible={bind(trayVisible)}>
           <Tray />
         </box>
       </box>
