@@ -19,8 +19,8 @@
   },
   "ui_font_size": 14,
   "buffer_font_size": 13,
-  "buffer_font_family": "Fira Code",
-  "ui_font_family": "Fira Code",
+  "buffer_font_family": "Hack",
+  "ui_font_family": "Hack",
   "theme": {
     "mode": "system",
     "light": "Tokyo Night",

@@ -5,7 +5,7 @@
 
   home.username      = "n3rdium";
   home.homeDirectory = "/home/n3rdium";
-  home.stateVersion  = "24.05"; # Please read the comment before changing.
+  home.stateVersion  = "24.05"; # Please don't touch
 
   home.packages = with pkgs; [
     # Essentials
@@ -35,9 +35,10 @@
     blender
     obsidian
     kdenlive
+    syncthing
 
     # Rice Stuff
-    cava
+    # cava wont build :(
     wofi
     swww
     dunst
@@ -45,11 +46,15 @@
     hyprshot
     hollywood
     fastfetch
-    fira-code
     playerctl
     obs-studio
     hyprpicker
+
+    # Fonts
+    fira-code
     font-awesome
+    fira-code-symbols
+    fira-code-nerdfont
 
     # Shell Stuff
     fd

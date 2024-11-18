@@ -1,8 +1,9 @@
 import { Astal, Gdk, Gtk, Widget } from "astal/gtk3";
-import { bind } from "astal";
+import { bind, Variable } from "astal";
 import AstalTray from "gi://AstalTray";
 
 const tray = AstalTray.get_default();
+export const trayVisible = Variable(true);
 
 const TrayItem = (id: string, item: AstalTray.TrayItem) => {
   const menu = item.create_menu();
@@ -27,12 +28,14 @@ const TrayItem = (id: string, item: AstalTray.TrayItem) => {
   );
 };
 
-const Tray = () => {
+export const Tray = () => {
   let itemAddedId: number | null = null;
   let itemRemovedId: number | null = null;
 
   const setup = (self: Widget.Box) => {
     self.children = tray.get_items().map((item) => TrayItem(item.itemId, item));
+    console.log(self.children, self.children.length);
+    trayVisible.set(self.children.length > 0);
 
     itemAddedId = tray.connect("item-added", (_, itemId) =>
       self.add(TrayItem(itemId, tray.get_item(itemId))),
@@ -61,5 +64,3 @@ const Tray = () => {
     />
   );
 };
-
-export default Tray;

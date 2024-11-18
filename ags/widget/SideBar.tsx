@@ -1,4 +1,4 @@
-import Tray from "./Tray";
+import { Tray, trayVisible } from "./Tray";
 import Time from "./Time";
 import Media from "./Media";
 import { Dock, dockVisible } from "./Dock";
