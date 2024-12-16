@@ -1,5 +1,5 @@
 * {
-    transition-timing-function: ease-in-out;
+    transition-duration: 0;
 }
 
 window.Bar {
@@ -12,7 +12,7 @@ menu,
     font-family: Fira Code;
     margin: 4px;
     padding: 6px;
-    background: #24283b;
+    background: black;
     border-radius: 4px;
     border: none;
 }
@@ -27,7 +27,7 @@ menu,
 menu:backdrop,
 .menu:backdrop,
 .context-menu:backdrop {
-    background-color: #24283b;
+    background-color: #3c3836;
 }
 
 menu menuitem,
@@ -48,7 +48,7 @@ menu menuitem,
 }
 
 .Container {
-    background: #1a1b26;
+    background: #282828;
     border-radius: 0px;
 }
 
@@ -59,42 +59,34 @@ menu menuitem,
 }
 
 .TimeLabel {
-    color: #c0caf5;
+    color: #fbf1c7;
     font-family: "Fira Code";
     font-size: 24px;
+    min-width: 46px;
     margin-top: -3px;
     margin-bottom: -3px;
 }
 .DateLabel {
-    color: #a9b1d6;
+    color: #ebdbb2;
     font-family: "Fira Code";
     font-size: 12px;
-}
-.BruhLabel {
-    color: #9aa5ce;
-    font-family: "Fira Code";
-    font-size: 12px;
-    opacity: 0.69;
 }
 .DateTime {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .NixOS-Button {
     background: transparent;
     border: 0px;
     border-radius: 0px;
-    min-width: 30px;
-    min-height: 38px;
+    min-height: 46px;
+    min-width: 46px;
     font-size: 28px;
-    transition-duration: 84ms;
 }
 .NixOS-Button:hover {
-    background-color: #414868;
     font-size: 30px;
 }
 .NixOS-Button:active {
-    background-color: #24283b;
     font-size: 27px;
 }
 
@@ -103,34 +95,26 @@ menu menuitem,
     border-radius: 0px;
     border: 0px;
 }
-.VerticalButton:hover {
-    background-color: #414868;
-}
-.VerticalButton:active {
-    background-color: #24283b;
-}
 
 .Workspace {
-    background-color: #565f89;
+    background-color: #928734;
     border-radius: 12px;
     min-width: 12px;
     min-height: 12px;
     margin-top: 6px;
     margin-bottom: 6px;
-    transition-duration: 150ms;
 }
 .Active {
-    background-color: #7aa2f7;
+    background-color: #458588;
     min-width: 21.32px; /* 16x9 */
     min-height: 12px;
     border-radius: 3px;
 }
 .Occupied {
-    background-color: #a9b1d6;
+    background-color: #ebdbb2;
 }
 .WorkspaceClick {
     background-color: transparent;
-    transition-duration: 240ms;
     min-width: unset;
     min-height: unset;
     margin: unset;
@@ -139,7 +123,6 @@ menu menuitem,
 }
 .WorkspaceClick:hover {
     background-color: transparent;
-    transition-duration: 240ms;
     min-width: unset;
     min-height: unset;
     margin: unset;
@@ -156,34 +139,29 @@ menu menuitem,
 }
 
 .Tray {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 0;
 }
 .TrayItem {
     all: unset;
     border: 0px;
     border-radius: 4px;
-    min-width: 28px;
-    min-height: 28px;
+    min-width: 26px;
+    min-height: 26px;
     padding: 2px;
-    margin-left: 8px;
-    margin-top: 0px;
+    margin: 0 10px;
     margin-bottom: 0px;
     font-size: 22px;
-    transition-duration: 64ms;
 }
 .TrayItem:hover {
-    background-color: #414868;
     font-size: 24px;
 }
 .TrayItem:active {
-    background-color: #24283b;
     font-size: 21px;
 }
 
 .PaneContainer {
     min-width: 420px;
-    background: #24283b;
+    background: #282828;
 }
 .dashboard-container {
     padding: 42px;
@@ -223,19 +201,16 @@ menu menuitem,
     margin: 0 6px;
     border-radius: 4px;
     padding: 0 4px;
-    transition-duration: 80ms;
 }
 .dockIcon:hover {
-    background-color: #414868;
     font-size: 30px;
 }
 .dockIcon:active {
-    background-color: #24283b;
     font-size: 27px;
 }
 
 .Fullscreen {
-    background-color: #24283b;
+    background-color: black;
 }
 .FullscreenContainer {
 }

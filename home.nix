@@ -14,6 +14,8 @@
     xfce.thunar
 
     # Astro
+    wine
+    bottles
     gimp
     siril
     stellarium
@@ -38,12 +40,13 @@
     syncthing
 
     # Rice Stuff
-    # cava wont build :(
+    cava
     wofi
     swww
     dunst
     cmatrix
     hyprshot
+    cavalier
     hollywood
     fastfetch
     playerctl
@@ -67,6 +70,7 @@
     ollama
     discord-canary
     ani-cli
+    mangal
   ];
 
   programs.ags = {
@@ -123,13 +127,13 @@
     enable = true;
 
     theme = {
-      name    = "Tokyonight-Dark";
-      package = pkgs.tokyonight-gtk-theme;
+      name    = "gruvbox-dark";
+      package = pkgs.gruvbox-dark-gtk;
     };
 
     iconTheme = {
-      name    = "Awaita";
-      package = pkgs.adwaita-icon-theme;
+      name    = "oomox-gruvbox-dark";
+      package = pkgs.gruvbox-dark-icons-gtk;
     };
   };
 

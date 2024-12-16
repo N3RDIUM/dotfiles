@@ -22,11 +22,11 @@
   "buffer_font_family": "Hack",
   "ui_font_family": "Hack",
   "theme": {
-    "mode": "system",
-    "light": "Tokyo Night",
-    "dark": "One Dark"
+    "mode": "dark",
+    "light": "Gruvbox Light",
+    "dark": "Gruvbox Material"
   },
-  "vim_mode": false,
+  "vim_mode": true,
   "vim": {
     "use_system_clipboard": "always"
   },

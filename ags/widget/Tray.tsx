@@ -34,14 +34,17 @@ export const Tray = () => {
 
   const setup = (self: Widget.Box) => {
     self.children = tray.get_items().map((item) => TrayItem(item.itemId, item));
-    trayVisible.set(Boolean(self.children.length));
+    trayVisible.set(self.children.length != 0);
 
-    itemAddedId = tray.connect("item-added", (_, itemId) =>
-      self.add(TrayItem(itemId, tray.get_item(itemId))),
-    );
+    itemAddedId = tray.connect("item-added", (_, itemId) => {
+      self.add(TrayItem(itemId, tray.get_item(itemId)));
+      trayVisible.set(true);
+    });
     itemRemovedId = tray.connect("item-removed", (_, itemId) => {
       const widget = self.children.find((w) => w.name === itemId);
       widget?.destroy();
+
+      trayVisible.set(self.children.length != 0);
     });
   };
 

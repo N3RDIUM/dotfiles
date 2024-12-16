@@ -53,9 +53,9 @@ export default function SideBar() {
 
         <box className="Separator" />
 
-        <box className="Container">
+        {/* <box className="Container">
           <Media />
-        </box>
+        </box> */}
 
         <box className="Container">
           <button
