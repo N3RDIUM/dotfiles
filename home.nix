@@ -34,10 +34,12 @@
     youtube-music
 
     # Prod
+    krita
     blender
     obsidian
     kdenlive
     syncthing
+    inkscape-with-extensions
 
     # Rice Stuff
     cava
@@ -57,7 +59,8 @@
     fira-code
     font-awesome
     fira-code-symbols
-    fira-code-nerdfont
+    nerd-fonts.fira-code
+    nerd-fonts.fira-mono
 
     # Shell Stuff
     fd
