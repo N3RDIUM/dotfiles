@@ -24,7 +24,7 @@
   "theme": {
     "mode": "dark",
     "light": "Gruvbox Light",
-    "dark": "Gruvbox Material"
+    "dark": "Gruvbox Dark Soft"
   },
   "vim_mode": true,
   "vim": {

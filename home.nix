@@ -25,6 +25,7 @@
     ruff
     rustup
     vscode
+    python3
     zed-editor
 
     # Music

@@ -1,11 +1,13 @@
 import os
 import random
+import subprocess
 import time
 
-wallpapers = os.listdir(".")
+wallpapers = os.listdir(os.path.dirname(__file__))
 wallpapers.remove("wallpaper.py")
-print(wallpapers)
+
+subprocess.call("swww-daemon")
 
 while True:
     os.system(f"swww img ~/wallpapers/{random.choice(wallpapers)}")
-    time.sleep(1)
+    time.sleep(42)
