@@ -7,5 +7,6 @@ TODO:
 - [ ] THEMING: custom gruvbox gtk theme
 - [ ] EDITOR:  Switch to Neovim completely
 - [ ] WEB:     Try global gruvbox
+- [ ] WEB:     Try qutebrowser
 - [ ] SHELL:   Finish making the shell
 - [ ] SHELL:   Make a lock screen
