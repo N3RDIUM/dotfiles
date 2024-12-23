@@ -1,7 +1,7 @@
 # Dotfiles
 My minimalist NixOS x Hyprland Dotfiles!
 
-![image](https://github.com/user-attachments/assets/fdab22b2-5d4a-4e67-9285-111071339c28)
+![image](https://github.com/user-attachments/assets/7f8a739b-a381-46b1-996e-8c6bb2950554)
 
 TODO:
 - [ ] THEMING: custom gruvbox gtk theme
