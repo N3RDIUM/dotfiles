@@ -80,7 +80,7 @@ menu menuitem,
     border: 0px;
     border-radius: 0px;
     min-height: 38px;
-    min-width: 34px;
+    min-width: 30px;
     font-size: 28px;
 }
 .NixOS-Button:hover {
