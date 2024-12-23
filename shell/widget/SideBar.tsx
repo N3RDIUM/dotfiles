@@ -30,7 +30,7 @@ export default function SideBar() {
           >
             <icon
               className={"NixOS-Icon"}
-              icon={"/home/n3rdium/.dotfiles/ags/assets/nixos.svg"}
+              icon={"/home/n3rdium/.shellassets/nixos.svg"}
             />
           </button>
         </box>

@@ -79,7 +79,7 @@
 
   programs.ags = {
     enable    = true;
-    configDir = ./ags;
+    configDir = ./shell;
 
     # additional packages to add to gjs's runtime
     extraPackages = [
@@ -147,15 +147,17 @@
   };
 
   home.file = {
-    ".config/hypr/".source             = ./hypr;
-    ".config/kitty/".source            = ./kitty;
-    ".config/fastfetch/".source        = ./fastfetch;
-    ".config/cava/".source             = ./cava;
-    ".config/atuin/".source            = ./atuin;
-    ".config/siril/".source            = ./siril;
-    ".config/zed/settings.json".source = ./zed/settings.json;
-    ".zshrc".source                    = ./.zshrc;
-    "wallpapers/".source               = ./wallpapers;
+    ".config/hypr/".source             = ./configs/hypr;
+    ".config/kitty/".source            = ./configs/kitty;
+    ".config/fastfetch/".source        = ./configs/fastfetch;
+    ".config/cava/".source             = ./configs/cava;
+    ".config/atuin/".source            = ./configs/atuin;
+    ".config/siril/".source            = ./configs/siril;
+    ".config/zed/settings.json".source = ./configs/zed/settings.json;
+    ".zshrc".source                    = ./configs/.zshrc;
+    "wallpapers/".source               = ./theming/wallpapers;
+    ".hyprshaders/".source             = ./configs/hypr/shaders;
+    ".shellassets/".source             = ./shell/assets;
   };
 
   home.sessionVariables = { EDITOR = "zed --wait"; };
