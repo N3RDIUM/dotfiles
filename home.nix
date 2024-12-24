@@ -24,9 +24,11 @@
     nixd
     ruff
     rustup
-    vscode
     python3
-    zed-editor
+    isort
+    black
+    stylua
+    prettierd
 
     # Music
     lmms
@@ -49,7 +51,6 @@
     dunst
     cmatrix
     hyprshot
-    cavalier
     hollywood
     fastfetch
     playerctl
@@ -76,6 +77,11 @@
     ani-cli
     mangal
   ];
+
+
+  wayland.windowManager.hyprland = {
+    enable = true;
+  };
 
   programs.ags = {
     enable    = true;
@@ -152,6 +158,8 @@
     ".config/fastfetch/".source        = ./configs/fastfetch;
     ".config/cava/".source             = ./configs/cava;
     ".config/atuin/".source            = ./configs/atuin;
+    ".config/nvim/lua".source          = ./configs/nvim/lua;
+    ".config/nvim/init.lua".source     = ./configs/nvim/init.lua;
     ".config/siril/".source            = ./configs/siril;
     ".config/zed/settings.json".source = ./configs/zed/settings.json;
     ".zshrc".source                    = ./configs/.zshrc;

@@ -15,6 +15,7 @@
         url = "github:aylur/ags";
         inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
@@ -26,14 +27,14 @@
         nixosConfigurations.n3rdium = lib.nixosSystem {
             inherit system;
             modules = [
-            ./nixos/configuration.nix
-            home-manager.nixosModules.home-manager
+              ./nixos/configuration.nix
+              home-manager.nixosModules.home-manager
                 {
-                    home-manager.useGlobalPkgs = true;
-                    home-manager.useUserPackages = true;
-                    home-manager.backupFileExtension = "backup";
-                    home-manager.users.n3rdium = import ./home.nix;
-                    home-manager.extraSpecialArgs = { inherit inputs; };
+                  home-manager.useGlobalPkgs = true;
+                  home-manager.useUserPackages = true;
+                  home-manager.backupFileExtension = "backup";
+                  home-manager.users.n3rdium = import ./home.nix;
+                  home-manager.extraSpecialArgs = { inherit inputs; };
                 }
             ];
         };
