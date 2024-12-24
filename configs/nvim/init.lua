@@ -1,5 +1,6 @@
 require("config.lazy")
 
+-- TODO: Move the require()s to their respective files.
 vim.o.background = "dark"
 require("gruvbox").setup({
   terminal_colors = true, -- add neovim terminal colors
@@ -25,7 +26,7 @@ require("gruvbox").setup({
   dim_inactive = false,
   transparent_mode = false,
 })
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme gruvbox") -- There's a better way to do this, directly from Lazy.
 
 require('lualine').setup {
   options = {
@@ -68,3 +69,5 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
+
+vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
