@@ -32,6 +32,7 @@
     stylua
     luarocks
     prettierd
+    gcc
 
     # Music
     lmms
