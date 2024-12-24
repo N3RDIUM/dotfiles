@@ -21,6 +21,8 @@
     stellarium
 
     # Code
+    ripgrep
+    lua5_1
     nixd
     ruff
     rustup
@@ -28,6 +30,7 @@
     isort
     black
     stylua
+    luarocks
     prettierd
 
     # Music
