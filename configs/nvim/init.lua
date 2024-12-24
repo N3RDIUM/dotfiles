@@ -113,13 +113,13 @@ vim.keymap.set('n', '<leader>bn', ':Neotree buffers reveal float', { desc = 'Neo
 vim.keymap.set('n', '<leader>bf', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>bo', builtin.oldfiles, { desc = 'Telescope old buffers' })
 
-vim.keymap.set('n', '<leader>gn', ':Neotree buffers reveal float', { desc = 'Neotree git status' })
+vim.keymap.set('n', '<leader>gn', ':Neotree git_status reveal float', { desc = 'Neotree git status' })
 vim.keymap.set('n', '<leader>gc', builtin.git_commits, { desc = 'Telescope git commits' })
-vim.keymap.set('n', '<leader>gs', builtin.git_commits, { desc = 'Telescope git status' })
-vim.keymap.set('n', '<leader>gS', builtin.git_commits, { desc = 'Telescope git stash' })
+vim.keymap.set('n', '<leader>gs', builtin.git_status, { desc = 'Telescope git status' })
+vim.keymap.set('n', '<leader>gS', builtin.git_stash, { desc = 'Telescope git stash' })
 
-vim.keymap.set('n', '<leader>ls', builtin.git_commits, { desc = 'Telescope treesitter symbols' })
+vim.keymap.set('n', '<leader>ls', builtin.treesitter, { desc = 'Telescope treesitter symbols' })
 
 vim.keymap.set('n', '<leader>cf', builtin.commands, { desc = 'Telescope commands' })
-vim.keymap.set('c', '<C-j>', builtin.command_history, { desc = 'Telescope command history' })
+vim.keymap.set('c', '<C-h>', builtin.command_history, { desc = 'Telescope command history' })
 
