@@ -1,5 +1,5 @@
 * {
-    transition-duration: 0;
+    transition-timing-function: ease-in-out;
 }
 
 window.Bar {
@@ -50,6 +50,7 @@ menu menuitem,
 .Container {
     background: #3c3836;
     border-radius: 0px;
+    border: solid 2px #7c6f64;
 }
 
 .Separator {
@@ -82,6 +83,7 @@ menu menuitem,
     min-height: 38px;
     min-width: 30px;
     font-size: 28px;
+    transition-duration: 84ms;
 }
 .NixOS-Button:hover {
     font-size: 30px;
@@ -103,6 +105,7 @@ menu menuitem,
     min-height: 12px;
     margin-top: 6px;
     margin-bottom: 6px;
+    transition-duration: 150ms;
 }
 .Active {
     background-color: #458588;
@@ -120,6 +123,7 @@ menu menuitem,
     margin: unset;
     padding: unset;
     border: unset;
+    transition-duration: 240ms;
 }
 .WorkspaceClick:hover {
     background-color: transparent;
@@ -151,6 +155,7 @@ menu menuitem,
     margin: 0 10px;
     margin-bottom: 0px;
     font-size: 22px;
+    transition-duration: 64ms;
 }
 .TrayItem:hover {
     font-size: 24px;
@@ -201,6 +206,7 @@ menu menuitem,
     margin: 0 6px;
     border-radius: 4px;
     padding: 0 4px;
+    transition-duration: 80ms;
 }
 .dockIcon:hover {
     font-size: 30px;

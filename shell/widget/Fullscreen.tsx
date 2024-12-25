@@ -16,7 +16,7 @@ function StackSwitcher({ children }: { children?: Array<JSX.Element> }) {
         hexpand
         vexpand
         transition_type={Gtk.StackTransitionType.SLIDE_UP_DOWN}
-        transitionDuration={42}
+        transitionDuration={512}
         visibleChildName={fullscreenVisibleName()}
       >
         {children}

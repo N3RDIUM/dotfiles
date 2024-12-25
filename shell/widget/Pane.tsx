@@ -16,7 +16,7 @@ function StackSwitcher({ children }: { children?: Array<JSX.Element> }) {
         hexpand
         vexpand
         transition_type={Gtk.StackTransitionType.SLIDE_UP_DOWN}
-        transitionDuration={0}
+        transitionDuration={512}
         visibleChildName={visibleName()}
       >
         {children}
@@ -40,7 +40,7 @@ export function Pane() {
     >
       <revealer
         transition_type={Gtk.RevealerTransitionType.SLIDE_LEFT}
-        transition_duration={0}
+        transition_duration={512}
         reveal_child={bind(showPane)}
       >
         <box className={"PaneContainer"} vertical hexpand vexpand>
