@@ -33,6 +33,7 @@
     luarocks
     prettierd
     gcc
+    tree-sitter
 
     # Music
     lmms
