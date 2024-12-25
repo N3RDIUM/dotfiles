@@ -44,6 +44,7 @@
     # Prod
     krita
     blender
+    ffmpeg
     obsidian
     kdenlive
     syncthing
@@ -54,6 +55,7 @@
     wofi
     swww
     dunst
+    kooha
     cmatrix
     hyprshot
     hollywood
