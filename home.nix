@@ -21,6 +21,7 @@
     stellarium
 
     # Code
+    trashy
     ripgrep
     lua5_1
     nixd
@@ -72,10 +73,14 @@
     nerd-fonts.fira-mono
 
     # Shell Stuff
+    fzf
     fd
     atuin
     pure-prompt
+    oh-my-zsh
+    zsh-completions
     zsh-autosuggestions
+    zsh-syntax-highlighting
     git-credential-oauth
 
     # Miscellaneous
@@ -107,30 +112,6 @@
   programs.zoxide = {
     enable               = true;
     enableZshIntegration = true;
-  };
-
-  programs.zsh = {
-    enable                    = true;
-    enableCompletion          = true;
-    autosuggestion.enable     = true;
-    syntaxHighlighting.enable = true;
-
-    shellAliases = {
-      ff  = "fastfetch";
-      cff = "clear && fastfetch";
-      zed = "zeditor";
-    };
-
-    history = {
-      size = 65536;
-      path = "${config.xdg.dataHome}/zsh/history";
-    };
-
-    oh-my-zsh = {
-      enable  = true;
-      plugins = [ "git" ];
-      theme   = "pure";
-    };
   };
 
   programs.git = {

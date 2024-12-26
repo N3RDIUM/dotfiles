@@ -5,6 +5,10 @@
 
   # Bootloader.
   boot = {
+    # Latest kernel
+    kernelPackages = pkgs.linuxPackages_latest;
+
+    # Grub
     loader.grub = {
       enable       = true;
       device       = "nodev";
@@ -67,7 +71,12 @@
   services.desktopManager.plasma6.enable = true;
 
   # Switch to ZSH
-  programs.zsh.enable    = true;
+  programs.zsh = {
+    enable                    = true;
+    enableCompletion          = true;
+    autosuggestions.enable    = true;
+    syntaxHighlighting.enable = true;
+  };
   users.defaultUserShell = pkgs.zsh;
 
   # Configure keymap in X11
@@ -132,6 +141,7 @@
     cmake
     meson
     cpio
+    oh-my-zsh
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
   ];
