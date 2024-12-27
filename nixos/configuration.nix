@@ -61,6 +61,20 @@
     LC_TIME           = "en_IN";
   };
 
+  services.keyd = {
+  enable = true;
+  keyboards = {
+    default = {
+      ids = [ "*" ];
+      extraConfig = ''
+[main]
+capslock = overload(meta, esc);
+      '';
+    };
+  };
+};
+
+
   # Enable SDDM, Hyprland and KDE Plasma
   services.displayManager.sddm = {
     enable         = true;
