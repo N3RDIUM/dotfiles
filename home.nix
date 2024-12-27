@@ -9,6 +9,7 @@
 
   home.packages = with pkgs; [
     # Essentials
+    yazi
     floorp
     imagemagick
     xfce.thunar

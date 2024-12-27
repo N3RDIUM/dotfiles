@@ -79,8 +79,9 @@ capslock = overload(meta, esc);
   services.displayManager.sddm = {
     enable         = true;
     wayland.enable = true;
-    # theme          = "where_is_my_sddm_theme";
+        # theme          = "where_is_my_sddm_theme";
   };
+    # services.xserver.enable = true;
   programs.hyprland.enable               = true;
   services.desktopManager.plasma6.enable = true;
 
