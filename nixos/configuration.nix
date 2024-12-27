@@ -32,7 +32,7 @@
     ];
   };
 
-  # Boot faster!
+  # Boot faster (for systemd, you're on grub rn)!
   systemd.services.systemd-udev-settle.enable        = false;
   systemd.services.NetworkManager-wait-online.enable = false;
 

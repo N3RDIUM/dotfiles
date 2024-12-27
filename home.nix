@@ -154,6 +154,10 @@
     "wallpapers/".source               = ./theming/wallpapers;
     ".hyprshaders/".source             = ./configs/hypr/shaders;
     ".shellassets/".source             = ./shell/assets;
+    "n3rdium.jpg".source               = ./n3rdium.jpg;
+    "n3rdium.png".source               = ./n3rdium.png;
+    "n3rdite.png".source               = ./n3rdite.png;
+    "n3rdite.jpg".source               = ./n3rdite.jpg;
   };
 
   home.sessionVariables = { EDITOR = "zed --wait"; };
