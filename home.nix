@@ -76,6 +76,10 @@
     # Shell Stuff
     fzf
     fd
+    jq
+    ripgrep-all
+    imagemagick
+    poppler
     atuin
     pure-prompt
     oh-my-zsh

@@ -50,7 +50,7 @@ menu menuitem,
 .Container {
     background: #3c3836;
     border-radius: 0px;
-    border: solid 2px #7c6f64;
+    border: solid 1px #7c6f64;
 }
 
 .Separator {
