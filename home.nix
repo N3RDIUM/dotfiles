@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, ... }:
+{ inputs, config, pkgs, hyprland, hy3, ... }:
 
 {
   imports = [ inputs.ags.homeManagerModules.default ];
@@ -98,6 +98,11 @@
 
   wayland.windowManager.hyprland = {
     enable = true;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    plugins = [ inputs.hy3.packages.x86_64-linux.hy3 ];
+    extraConfig = builtins.readFile (builtins.path {
+        path = ./configs/hypr/hyprland.conf;
+    });
   };
 
   programs.ags = {
@@ -146,7 +151,6 @@
   };
 
   home.file = {
-    ".config/hypr/".source             = ./configs/hypr;
     ".config/kitty/".source            = ./configs/kitty;
     ".config/fastfetch/".source        = ./configs/fastfetch;
     ".config/cava/".source             = ./configs/cava;

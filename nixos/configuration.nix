@@ -82,7 +82,6 @@ capslock = overload(meta, esc);
         # theme          = "where_is_my_sddm_theme";
   };
     # services.xserver.enable = true;
-  programs.hyprland.enable               = true;
   services.desktopManager.plasma6.enable = true;
 
   # Switch to ZSH
