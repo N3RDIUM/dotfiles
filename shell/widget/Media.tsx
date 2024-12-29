@@ -27,7 +27,7 @@ function Player({ player }: { player?: Mpris.Player }) {
         >
             <icon
                 icon={coverart()}
-            >
+            > { /* TODO: Use box and background-image instead for object-fit and rounded corners */ }
             </icon>
         </button>
     );
