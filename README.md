@@ -1,11 +1,11 @@
 # Dotfiles
 My minimalist NixOS x Hyprland Dotfiles!
 
-![image](https://github.com/user-attachments/assets/7f8a739b-a381-46b1-996e-8c6bb2950554)
+![image](https://github.com/user-attachments/assets/fa35bf6d-503f-4411-ba73-c33be5abc968)
 
 TODO:
 - [ ] THEMING: custom gruvbox gtk theme
-- [ ] EDITOR:  Switch to Neovim completely
+- [x] EDITOR:  Switch to Neovim completely
 - [ ] WEB:     Try global gruvbox
 - [ ] WEB:     Try qutebrowser
 - [ ] SHELL:   Finish making the shell
