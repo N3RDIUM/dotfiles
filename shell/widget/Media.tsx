@@ -24,11 +24,10 @@ function Player({ player }: { player?: Mpris.Player }) {
             onClick={() => {
                 execAsync("ags request 'pane Media'");
             }}
-        >
+        >{ /* TODO: Use box and background-image instead for object-fit and rounded corners */}
             <icon
                 icon={coverart()}
-            > { /* TODO: Use box and background-image instead for object-fit and rounded corners */ }
-            </icon>
+            />
         </button>
     );
 }
