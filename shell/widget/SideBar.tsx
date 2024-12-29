@@ -51,12 +51,6 @@ export default function SideBar() {
 
         <box vertical vexpand hexpand />
 
-        <box className="Separator" />
-
-        {/* <box className="Container">
-          <Media />
-        </box> */}
-
         <box className="Container">
           <button
             className={"VerticalButton"}
@@ -72,6 +66,13 @@ export default function SideBar() {
 
         <box className="Container Tray" visible={bind(trayVisible)}>
           <Tray />
+        </box>
+
+        <box className="Separator" />
+
+        <box vertical className="Container">
+          <Media />
+          { /* TODO: Some more stuff like networking */ }
         </box>
       </box>
     </window>

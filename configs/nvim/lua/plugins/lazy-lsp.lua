@@ -26,6 +26,7 @@ return {
                 html = {},
                 python = { "pyright", "ruff-lsp" },
                 rust = { "rust-analyzer" },
+                typescript = { "typescript-language-server" },
             },
             prefer_local = true,
 

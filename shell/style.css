@@ -165,6 +165,28 @@ menu menuitem,
     font-size: 21px;
 }
 
+.Players {
+    padding: 10px 0;
+}
+.PlayerArt {
+    all: unset;
+    border: 0px;
+    border-radius: 4px;
+    min-width: 26px;
+    min-height: 26px;
+    padding: 2px;
+    margin: 0 10px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    transition-duration: 64ms;
+}
+.PlayerArt:hover {
+    font-size: 26px;
+}
+.PlayerArt:active {
+    font-size: 25px;
+}
+
 .PaneContainer {
     min-width: 420px;
     background: #3c3836;

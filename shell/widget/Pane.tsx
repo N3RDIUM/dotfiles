@@ -48,23 +48,12 @@ export function Pane() {
             <box name="NixOS" vertical>
               <icon className={"NixOS-PaneIcon"} icon={"./assets/nixos.svg"} />
               <box hexpand className={"dashboard-container"}>
-                <button className="pane-1x1">
-                  <box className="avatar"></box>
-                </button>
-                <button className="pane-1x1">
-                  <label className="icon-1x1" label=""></label>
-                </button>
-                <button className="pane-1x1">
-                  <label className="icon-1x1" label=""></label>
-                </button>
-                <button className="pane-1x1">
-                  <label className="icon-1x1" label=""></label>
-                </button>
+                { /* WIP */ }
               </box>
             </box>
 
             <box name="Time">Time</box>
-            <box name="Calendar">Calendar</box>
+            <box name="Media">Media</box>
           </StackSwitcher>
         </box>
       </revealer>
