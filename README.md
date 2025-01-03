@@ -10,3 +10,11 @@ TODO:
 - [ ] WEB:     Try qutebrowser
 - [ ] SHELL:   Finish making the shell
 - [ ] SHELL:   Make a lock screen
+
+## Credits
+- Thanks to [@Aylur](https://github.com/Aylur) for creating [ags](https://github.com/Aylur/ags)
+- The date/time widget is a modified version of [@kotontrion](https://github.com/kotontrion)'s design. I guess he liked it, so he's using it in [kompass](https://github.com/kotontrion/kompass) as well.
+
+## Related Projects
+- [kompass](https://github.com/kotontrion/kompass)
+- [@ForumnaGit's Dotfiles](https://github.com/FormunaGit/dotfiles)
