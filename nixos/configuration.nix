@@ -36,6 +36,12 @@
   systemd.services.systemd-udev-settle.enable        = false;
   systemd.services.NetworkManager-wait-online.enable = false;
 
+  # OpenGL
+  hardware.opengl.enable = true;
+
+  # Whatever this is
+  programs.dconf.enable = true;    
+
   # Enable networking
   networking.networkmanager.enable = true;
   networking.hostName              = "n3rdiums-machine";
@@ -76,13 +82,13 @@ capslock = overload(meta, esc);
 
 
   # Enable SDDM, Hyprland and KDE Plasma
-  services.displayManager.sddm = {
-    enable         = true;
-    wayland.enable = true;
+    #services.displayManager.sddm = {
+    #enable         = true;
+    #wayland.enable = true;
         # theme          = "where_is_my_sddm_theme";
-  };
+    #};
     # services.xserver.enable = true;
-  services.desktopManager.plasma6.enable = true;
+    #services.desktopManager.plasma6.enable = true;
 
   # Switch to ZSH
   programs.zsh = {
@@ -118,13 +124,6 @@ capslock = overload(meta, esc);
       isNormalUser = true;
       description  = "n3rdium";
       extraGroups  = [ "networkmanager" "wheel" ];
-      packages     = with pkgs; [ ];
-    };
-
-    not-n3rdium = {
-      isNormalUser = true;
-      description  = "not-n3rdium";
-      extraGroups  = [ "networkmanager" ];
       packages     = with pkgs; [ ];
     };
   };

@@ -13,12 +13,12 @@
     floorp
     imagemagick
     xfce.thunar
+    rpi-imager
 
     # Astro
     wine
-    bottles
     gimp
-    siril
+    # siril
     stellarium
 
     # Code
@@ -38,6 +38,8 @@
     tree-sitter
 
     # Music
+    musescore
+    muse-sounds-manager
     lmms
     audacity
     pavucontrol
@@ -45,7 +47,7 @@
 
     # Prod
     krita
-    blender
+    # blender
     ffmpeg
     obsidian
     kdenlive
@@ -60,18 +62,15 @@
     kooha
     cmatrix
     hyprshot
-    hollywood
     fastfetch
     playerctl
     obs-studio
     hyprpicker
+    inputs.hyprsunset.packages.${system}.default
 
     # Fonts
     fira-code
-    font-awesome
-    fira-code-symbols
-    nerd-fonts.fira-code
-    nerd-fonts.fira-mono
+    jetbrains-mono
 
     # Shell Stuff
     fzf
@@ -158,7 +157,6 @@
     ".config/nvim/lua".source          = ./configs/nvim/lua;
     ".config/nvim/init.lua".source     = ./configs/nvim/init.lua;
     ".config/siril/".source            = ./configs/siril;
-    ".config/zed/settings.json".source = ./configs/zed/settings.json;
     ".zshrc".source                    = ./configs/.zshrc;
     "wallpapers/".source               = ./theming/wallpapers;
     ".hyprshaders/".source             = ./configs/hypr/shaders;

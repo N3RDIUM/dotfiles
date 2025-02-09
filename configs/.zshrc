@@ -8,6 +8,3 @@ eval "$(zoxide init zsh)"
 zstyle ':completion:*' menu no
 
 alias ls="ls --color"
-
-# Why not?
-fastfetch

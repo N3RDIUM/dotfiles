@@ -1,10 +1,10 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "general": {
-    "playerName": "spotify"
+    "playerName": "youtube-music"
   },
   "modules": [
-    {
+    {// TODO: Remove these. They look kinda ugly.
         "type": "custom",
         "format": "\u001b[90m┌─────────────────────────────────────────────────────────────┐"
     },
