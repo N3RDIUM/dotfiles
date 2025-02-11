@@ -37,7 +37,7 @@
   systemd.services.NetworkManager-wait-online.enable = false;
 
   # OpenGL
-  hardware.opengl.enable = true;
+  hardware.graphics.enable = true;
 
   # Whatever this is
   programs.dconf.enable = true;    
@@ -82,13 +82,12 @@ capslock = overload(meta, esc);
 
 
   # Enable SDDM, Hyprland and KDE Plasma
-    #services.displayManager.sddm = {
-    #enable         = true;
-    #wayland.enable = true;
-        # theme          = "where_is_my_sddm_theme";
-    #};
-    # services.xserver.enable = true;
-    #services.desktopManager.plasma6.enable = true;
+  services.displayManager.sddm = {
+    enable         = true;
+    wayland.enable = true;
+    # theme          = "where_is_my_sddm_theme";
+  };
+  services.desktopManager.plasma6.enable = true;
 
   # Switch to ZSH
   programs.zsh = {
@@ -109,7 +108,7 @@ capslock = overload(meta, esc);
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable      = true;
   services.pipewire = {
     enable            = true;
@@ -124,7 +123,12 @@ capslock = overload(meta, esc);
       isNormalUser = true;
       description  = "n3rdium";
       extraGroups  = [ "networkmanager" "wheel" ];
-      packages     = with pkgs; [ ];
+    };
+
+    not-n3rdium = {
+      isNormalUser = true;
+      description  = "not-n3rdium";
+      extraGroups  = [ "networkmanager" ];
     };
   };
 
