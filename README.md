@@ -59,8 +59,7 @@ TODO:
     - [ ] Create a logo too
 
 ## Credits
-- Thanks to [@Aylur](https://github.com/Aylur) for creating [ags](https://github.com/Aylur/ags)
-- The date/time widget is a modified version of [@kotontrion](https://github.com/kotontrion)'s design. It's being used in [kompass](https://github.com/kotontrion/kompass) as well!
+- The date/time widget is a modified version of [@kotontrion](https://github.com/kotontrion)'s design. Looks like kotontrion liked it, because my modifications are being used in [kompass](https://github.com/kotontrion/kompass) as well!
 
 ## Related Projects
 - [kompass](https://github.com/kotontrion/kompass)
