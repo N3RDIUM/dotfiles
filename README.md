@@ -10,6 +10,7 @@ TODO:
     - [ ] Ditch mouse?
     - [ ] Somehow revive previous session if possible (hibernate?)
     - [ ] Move the profile pics to assets, they're annoying. Move all assets to a single dir (`~/.zenithassets`)
+    - [ ] Make n3rdium.dev navigatable w/ vim motions
     - [x] Write an actual todo list
 - Neovim
     - [ ] Add (`markdown.nvim`), (`snacks.nvim` or `mini.nvim`)
