@@ -1,5 +1,5 @@
-# Dotfiles
-My minimalist NixOS x Hyprland Dotfiles!
+# Zenith
+My minimal NixOS x Hyprland Dotfiles!
 
 ![image](https://github.com/user-attachments/assets/fa35bf6d-503f-4411-ba73-c33be5abc968)
 
@@ -64,3 +64,4 @@ TODO:
 ## Related Projects
 - [kompass](https://github.com/kotontrion/kompass)
 - [@ForumnaGit's Dotfiles](https://github.com/FormunaGit/dotfiles)
+
