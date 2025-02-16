@@ -6,6 +6,7 @@ My minimalist NixOS x Hyprland Dotfiles!
 TODO:
 - General
     - [ ] Figure out how to make everything keyboard-centric
+    - [ ] Somehow revive previous session if possible (hibernate?)
     - [ ] Ditch mouse?
     - [x] Write an actual todo list
 - Neovim
