@@ -11,19 +11,14 @@
     # Essentials
     yazi
     floorp
-    imagemagick
     xfce.thunar
-    rpi-imager
 
     # Astro
-    wine
     gimp
-    # siril
     stellarium
 
     # Code
     trashy
-    ripgrep
     lua5_1
     nixd
     ruff
@@ -46,13 +41,9 @@
     youtube-music
 
     # Prod
-    krita
-    # blender
     ffmpeg
     obsidian
     kdenlive
-    syncthing
-    inkscape-with-extensions
 
     # Rice Stuff
     cava
@@ -60,13 +51,11 @@
     swww
     dunst
     kooha
-    cmatrix
     hyprshot
     fastfetch
     playerctl
     obs-studio
     hyprpicker
-    inputs.hyprsunset.packages.${system}.default
 
     # Fonts
     fira-code
@@ -75,21 +64,17 @@
     # Shell Stuff
     fzf
     fd
-    jq
     ripgrep-all
     imagemagick
     poppler
     atuin
     pure-prompt
     oh-my-zsh
-    zsh-completions
-    zsh-autosuggestions
-    zsh-syntax-highlighting
     git-credential-oauth
 
     # Miscellaneous
     ollama
-    discord-canary
+    discord
     ani-cli
     mangal
   ];
