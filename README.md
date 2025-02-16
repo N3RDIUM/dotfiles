@@ -9,6 +9,7 @@ TODO:
     - [ ] Figure out how to make everything keyboard-centric
     - [ ] Ditch mouse?
     - [ ] Somehow revive previous session if possible (hibernate?)
+    - [ ] Move the profile pics to assets, they're annoying. Move all assets to a single dir (`~/.zenithassets`)
     - [x] Write an actual todo list
 - Neovim
     - [ ] Add (`markdown.nvim`), (`snacks.nvim` or `mini.nvim`)
