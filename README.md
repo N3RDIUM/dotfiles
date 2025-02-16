@@ -2,12 +2,13 @@
 My minimal NixOS x Hyprland Dotfiles!
 
 ![image](https://github.com/user-attachments/assets/fa35bf6d-503f-4411-ba73-c33be5abc968)
+^Outdated screenshot!
 
 TODO:
 - General
     - [ ] Figure out how to make everything keyboard-centric
-    - [ ] Somehow revive previous session if possible (hibernate?)
     - [ ] Ditch mouse?
+    - [ ] Somehow revive previous session if possible (hibernate?)
     - [x] Write an actual todo list
 - Neovim
     - [ ] Add (`markdown.nvim`), (`snacks.nvim` or `mini.nvim`)
