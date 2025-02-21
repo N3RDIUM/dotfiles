@@ -15,6 +15,7 @@
 
     # Astro
     gimp
+    wine64Packages.wayland
     stellarium
 
     # Code
@@ -31,6 +32,7 @@
     prettierd
     gcc
     tree-sitter
+    ripgrep
 
     # Music
     musescore
@@ -64,7 +66,6 @@
     # Shell Stuff
     fzf
     fd
-    ripgrep-all
     imagemagick
     poppler
     atuin
@@ -135,20 +136,17 @@
   };
 
   home.file = {
-    ".config/kitty/".source            = ./configs/kitty;
-    ".config/fastfetch/".source        = ./configs/fastfetch;
-    ".config/cava/".source             = ./configs/cava;
-    ".config/atuin/".source            = ./configs/atuin;
-    ".config/nvim/lua".source          = ./configs/nvim/lua;
-    ".config/nvim/init.lua".source     = ./configs/nvim/init.lua;
-    ".config/siril/".source            = ./configs/siril;
-    ".zshrc".source                    = ./configs/.zshrc;
-    "wallpapers/".source               = ./theming/wallpapers;
-    ".hyprshaders/".source             = ./configs/hypr/shaders;
-    "n3rdium.jpg".source               = ./n3rdium.jpg;
-    "n3rdium.png".source               = ./n3rdium.png;
-    "n3rdite.png".source               = ./n3rdite.png;
-    "n3rdite.jpg".source               = ./n3rdite.jpg;
+    ".config/kitty/".source        = ./configs/kitty;
+    ".config/fastfetch/".source    = ./configs/fastfetch;
+    ".config/cava/".source         = ./configs/cava;
+    ".config/atuin/".source        = ./configs/atuin;
+    ".config/nvim/lua".source      = ./configs/nvim/lua;
+    ".config/nvim/init.lua".source = ./configs/nvim/init.lua;
+    ".config/siril/".source        = ./configs/siril;
+    ".zshrc".source                = ./configs/.zshrc;
+    "wallpapers/".source           = ./theming/wallpapers;
+    ".hyprshaders/".source         = ./configs/hypr/shaders;
+    ".zenithassets/".source        = ./assets;
   };
 
   home.sessionVariables = { EDITOR = "nvim"; };

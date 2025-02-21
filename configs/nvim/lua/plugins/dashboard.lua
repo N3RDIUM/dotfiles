@@ -10,7 +10,7 @@ return {
                 packages = { enable = false },
                 project = { enable = false },
                 mru = { enable = false },
-                footer = { "What was I supposed to write here?" },
+                footer = { "What am I supposed to write here?" },
                 disable_move = { true },
             }
         }

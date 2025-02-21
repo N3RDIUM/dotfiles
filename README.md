@@ -50,6 +50,7 @@ TODO:
     - [ ] find a good system resource monitor
     - [ ] nuke unnecessary stuff (cmatrix, hollywood, pipes.sh)
     - [ ] Miss cmatrix, bring it back
+    - [ ] Miss cava, bring it back
     - [ ] TUI AI assistant
     - [ ] Find a tui discord client too
 - NixOS
