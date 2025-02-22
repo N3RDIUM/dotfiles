@@ -7,7 +7,7 @@ export default function automate() {
     hyprland.connect("event", () => {
         let found = 0;
         for (const client of hyprland.get_clients()) {
-            if (client.workspace == hyprland.get_focused_workspace()) {
+            if (client.workspace == hyprland.get_focused_workspace() && !client.floating) {
                 found++;
             }
         }
