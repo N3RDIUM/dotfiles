@@ -13,7 +13,6 @@ export default function shybar() {
             css="min-width: 42px; background: red; min-height: 42px;"
             application={App}
         >
-           42 
         </window>;
 }
 

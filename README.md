@@ -19,7 +19,7 @@ TODO:
     - [ ] Migrate from obsidian to nvim
 - Hyprland
     - [ ] Automated script for window borders, gaps and rounding
-    - [ ] Nuke unneeded stuff from 
+    - [ ] Nuke unneeded stuff 
     - [ ] Reformat config
     - [ ] Actually configure `hy3`
     - [ ] Remake keybinds
@@ -63,7 +63,7 @@ TODO:
     - [ ] Create a logo too
 
 ## Credits
-- The [old date/time widget](https://private-user-images.githubusercontent.com/74598401/399143789-fa35bf6d-503f-4411-ba73-c33be5abc968.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk2OTI2OTcsIm5iZiI6MTczOTY5MjM5NywicGF0aCI6Ii83NDU5ODQwMS8zOTkxNDM3ODktZmEzNWJmNmQtNTAzZi00NDExLWJhNzMtYzMzYmU1YWJjOTY4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjE2VDA3NTMxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkyZGFkYTQ3YjVkNGUyZGU1Njg4MDNmNGUwYWZkMWRiYzEwNDNiMjg0Njc3YmM2MjAyZmRkNzVhMjRlMmE1NjAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.9FAa_7S0rwTsK_ZbMceVTV2LTZycN-4hD79y5dLopTY) was a modified version of [@kotontrion](https://github.com/kotontrion)'s design. Looks like kotontrion liked it, because my modifications are being used in [kompass](https://github.com/kotontrion/kompass) as well!
+- The [old date/time widget](https://private-user-images.githubusercontent.com/74598401/399143789-fa35bf6d-503f-4411-ba73-c33be5abc968.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAxNDU5NDMsIm5iZiI6MTc0MDE0NTY0MywicGF0aCI6Ii83NDU5ODQwMS8zOTkxNDM3ODktZmEzNWJmNmQtNTAzZi00NDExLWJhNzMtYzMzYmU1YWJjOTY4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjIxVDEzNDcyM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTMwMGRmZWZhYzFhMDFlMmJiYzRlZWMxYmMwMGJlODE2NzUyNjRhMzM0NzFlY2E5YWUxMmJkNWJhMDgwZWU3MzYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.MacWA9jKoPIm3Beb4T9mhk_ukkfx33oVF_eMZq_KlYI) was a modified version of [@kotontrion](https://github.com/kotontrion)'s design. Looks like kotontrion liked it, because my modifications are being used in [kompass](https://github.com/kotontrion/kompass) as well!
 
 ## Related Projects
 - [kompass](https://github.com/kotontrion/kompass)
