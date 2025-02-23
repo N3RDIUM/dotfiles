@@ -30,8 +30,6 @@ vim.opt.isfname:append("@-@")
 
 vim.g.mapleader = " "
 
--- TODO! Remap capslk to esc
-
 -- Custom keymaps!
 local builtin = require('telescope.builtin')
 
