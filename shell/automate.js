@@ -13,9 +13,15 @@ export default function automate() {
         }
 
         if (found > 1) {
-            exec("hyprctl --batch 'keyword general:gaps_out 8; keyword general:gaps_in 4; keyword general:border_size 2; keyword decoration:rounding_power 10.0;'");
+            exec(`hyprctl --batch 'keyword general:gaps_out 8;
+                keyword general:gaps_in 4; 
+                keyword general:border_size 2; 
+                keyword decoration:rounding_power 10.0;'`);
         } else {
-            exec("hyprctl --batch 'keyword general:gaps_out 0; keyword general:gaps_in 0; keyword general:border_size 0; keyword decoration:rounding_power 0.0;'");
+            exec(`hyprctl --batch 'keyword general:gaps_out 0; 
+                keyword general:gaps_in 0; 
+                keyword general:border_size 0; 
+                keyword decoration:rounding_power 0.0;'`);
         }
     })
 }
