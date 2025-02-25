@@ -10,7 +10,6 @@ export default function shybar() {
                 Astal.WindowAnchor.TOP |
                 Astal.WindowAnchor.BOTTOM
             }
-            css="min-width: 42px; background: red; min-height: 42px;"
             application={App}
         >
         </window>;
