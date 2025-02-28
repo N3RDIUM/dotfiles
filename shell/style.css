@@ -2,6 +2,16 @@
     min-width: 54px;
     background: #282828;
 }
-.ConditionalMargin {
-    margin-left: 4px;
+
+.TimeWidget {
+    min-width: 54px;
+    padding: 8px 0;
+}
+.DateLabel {
+    font-family: Fira Code;
+    font-size: 12px;
+}
+.TimeLabel {
+    font-family: Fira Code;
+    font-size: 24px;
 }

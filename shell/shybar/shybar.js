@@ -1,5 +1,6 @@
 import { App, Astal } from "astal/gtk3";
 import { Variable, bind } from "astal";
+import Time from "./widgets/time.js";
 
 export default function shybar() {
     return <window
@@ -14,6 +15,7 @@ export default function shybar() {
             application={App}
         >
             <box className = "BarContainer" >
+                <Time /> 
             </box>
         </window>;
 }
