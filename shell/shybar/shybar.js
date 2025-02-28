@@ -1,7 +1,7 @@
 import { App, Astal } from "astal/gtk3";
 import { Variable, bind } from "astal";
 
-export default function shybar(multipleWindows) {
+export default function shybar() {
     return <window
             className = "ShyBar"
             monitor = {0}
@@ -13,7 +13,7 @@ export default function shybar(multipleWindows) {
             }
             application={App}
         >
-            <box className = { bind(multipleWindows).as(value => value ? "BarContainer ConditionalMargin" : "BarContainer" ) }>
+            <box className = "BarContainer" >
             </box>
         </window>;
 }
