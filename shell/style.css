@@ -1,6 +1,64 @@
+* {
+    transition-timing-function: ease-in-out;
+}
+
 .BarContainer {
     min-width: 54px;
     background: #282828;
+}
+.Separator {
+    min-height: 2px;
+    margin: 6px;
+    border-radius: 2px;
+    background: #665c54;
+}
+
+.NixOSContainer {
+    padding: 8px 0;
+    padding-bottom: 2px;
+}
+.NixOS {
+    font-size: 36px;
+}
+
+.Workspace {
+    background-color: #928734;
+    border-radius: 12px;
+    min-width: 12px;
+    min-height: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    transition-duration: 150ms;
+}
+.Active {
+    background-color: #458588;
+    min-width: 21.32px; /* 16x9 */
+    min-height: 12px;
+    border-radius: 3px;
+}
+.Occupied {
+    background-color: #ebdbb2;
+}
+.WorkspaceClick {
+    background-color: transparent;
+    min-width: unset;
+    min-height: unset;
+    margin: unset;
+    padding: unset;
+    border: unset;
+    transition-duration: 240ms;
+}
+.WorkspaceClick:hover {
+    background-color: transparent;
+    min-width: unset;
+    min-height: unset;
+    margin: unset;
+    padding: unset;
+    border: unset;
+}
+.WorkspaceClick:hover {
+    min-width: 16px;
+    min-height: 16px;
 }
 
 .TimeWidget {
@@ -14,4 +72,27 @@
 .TimeLabel {
     font-family: Fira Code;
     font-size: 24px;
+}
+
+.Tray {
+    padding: 12px 0;
+    padding-top: 2px;
+}
+.TrayItem {
+    all: unset;
+    border: 0px;
+    border-radius: 4px;
+    min-width: 26px;
+    min-height: 26px;
+    padding: 4px;
+    margin: 0 10px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    transition-duration: 64ms;
+}
+.TrayItem:hover {
+    font-size: 24px;
+}
+.TrayItem:active {
+    font-size: 21px;
 }

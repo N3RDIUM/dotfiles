@@ -26,11 +26,11 @@ const transform = (v) =>
 
 export default function Time() {
   return (
-    <box vertical className={"TimeWidget"}>
-      <label className={"DateLabel"} label={dm(transform)} />
-      <label className={"TimeLabel"} label={hour(transform)} />
-      <label className={"TimeLabel"} label={minute(transform)} />
-      <label className={"DateLabel"} label={year(transform)} />
+    <box vertical className="TimeWidget">
+      <label className="DateLabel" label={dm(transform)} />
+      <label className="TimeLabel" label={hour(transform)} />
+      <label className="TimeLabel" label={minute(transform)} />
+      <label className="DateLabel" label={year(transform)} />
     </box>
   );
 }
