@@ -1,1 +1,7 @@
-
+.BarContainer {
+    min-width: 54px;
+    background: red;
+}
+.ConditionalMargin {
+    margin-left: 4px;
+}
