@@ -1,8 +1,7 @@
 # Zenith
 My minimal NixOS x Hyprland Dotfiles!
 
-![image](https://github.com/user-attachments/assets/fa35bf6d-503f-4411-ba73-c33be5abc968)
-^Outdated screenshot!
+![image](https://github.com/user-attachments/assets/0a75ed02-b70f-40d9-8ab3-99aefbb56a63)
 
 TODO:
 - General
