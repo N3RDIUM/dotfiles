@@ -5,10 +5,10 @@ My minimal NixOS x Hyprland Dotfiles!
 
 TODO:
 - General
-    - [ ] Figure out how to make everything keyboard-centric
+    - [x] Figure out how to make everything keyboard-centric
     - [ ] Ditch mouse?
     - [ ] Somehow revive previous session if possible (hibernate?)
-    - [ ] Move the profile pics to assets, they're annoying. Move all assets to a single dir (`~/.zenithassets`)
+    - [x] Move the profile pics to assets, they're annoying. Move all assets to a single dir (`~/.zenithassets`)
     - [ ] Make n3rdium.dev navigatable w/ vim motions
     - [x] Write an actual todo list
 - Neovim
@@ -17,10 +17,10 @@ TODO:
     - [ ] Remake keybinds
     - [ ] Migrate from obsidian to nvim
 - Hyprland
-    - [ ] Automated script for window borders, gaps and rounding
+    - [x] Automated script for window borders, gaps and rounding
     - [ ] Nuke unneeded stuff 
     - [ ] Reformat config
-    - [ ] Actually configure `hy3`
+    - [x] Actually configure `hy3`
     - [ ] Remake keybinds
     - [ ] Auto brightness/warmth based on time
 - fastfetch
@@ -57,7 +57,7 @@ TODO:
     - [ ] Enable automatic updates (w/ desktop notif)
     - [ ] Enable auto gc
 - Theming
-    - [ ] Get a good wallpaper (live/dynamic based on time)
+    - [x] Get a good wallpaper (live/dynamic based on time)
     - [x] Decide a name for this rice
     - [ ] Create a logo too
 
