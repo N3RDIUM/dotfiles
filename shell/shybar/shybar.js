@@ -3,7 +3,7 @@ import { Variable, bind } from "astal";
 import NixOS from "./widgets/nixos.js";
 import Workspaces from "./widgets/workspaces.js";
 import Time from "./widgets/time.js";
-import { Tray, trayVisible } from "./widgets/tray.js"
+import { Tray, TrayWidgets } from "./widgets/tray.js"
 
 function Separator() {
     return <box className="Separator" />
@@ -31,8 +31,9 @@ export default function shybar() {
 
                 <Separator />
                 <Time /> 
-                <Separator visible = {trayVisible()} />
+                <Separator />
                 <Tray />
+                <TrayWidgets />
             </box>
         </window>;
 }

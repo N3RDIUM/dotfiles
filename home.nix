@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, hyprland, hy3, ... }:
+{ inputs, config, pkgs, hyprland, hy3, textfox, ... }:
 
 {
   imports = [ inputs.ags.homeManagerModules.default ];
@@ -45,7 +45,7 @@
     # Prod
     ffmpeg
     obsidian
-    kdenlive
+    kdePackages.kdenlive
 
     # Rice Stuff
     cava
@@ -149,6 +149,7 @@
     "wallpapers/".source           = ./theming/wallpapers;
     ".hyprshaders/".source         = ./configs/hypr/shaders;
     ".zenithassets/".source        = ./assets;
+    ".zenithscripts/".source       = ./scripts;
   };
 
   home.sessionVariables = { EDITOR = "nvim"; };

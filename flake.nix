@@ -16,14 +16,14 @@
         inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1?ref=0.47.0";
-    hyprsunset.url = "github:hyprwm/hyprsunset";
     hy3 = {
       url = "github:outfoxxed/hy3";
       inputs.hyprland.follows = "hyprland";
     };
+    textfox.url = "github:adriankarlen/textfox";
   };
 
-  outputs = { nixpkgs, home-manager, hyprland, hy3, hyprsunset, ... }@inputs:
+  outputs = { nixpkgs, home-manager, hyprland, hy3, textfox, ... }@inputs:
     let
       system = "x86_64-linux";
       lib = nixpkgs.lib;
